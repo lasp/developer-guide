@@ -2,16 +2,17 @@
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
-[project]
+[tool.poetry]
 name = "developer-guide"
 version = "0.1.0"
 description = "Guidelines for software developers at LASP"
-authors = [{name = "Matthew Bourque", email = "Matthew.Bourque@lasp.colorado.edu"},
-    {name = "Keira Brooks", email = "Keira.Brooks@lasp.colorado.edu"},
-    {name = "Veronica Martinez", email = "Veronica.Martinez@lasp.colorado.edu"},
-    {name = "Alex Ware", email = "Alex.Ware@lasp.colorado.edu"}]
+authors = [
+    "Matthew Bourque <Matthew.Bourque@lasp.colorado.edu>",
+    "Keira Brooks <Keira.Brooks@lasp.colorado.edu>",
+    "Veronica Martinez <Veronica.Martinez@lasp.colorado.edu>",
+    "Alex Ware <Alex.Ware@lasp.colorado.edu>"]
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 keywords = ["LASP", "Developer Guide", "Software"]
 classifiers = [
     "Natural Language :: English",
@@ -22,3 +23,7 @@ classifiers = [
 [project.urls]
 homepage = "https://github.com/lasp/"
 repository = "https://github.com/lasp/developer-guide"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4"
+sphinx = "^7.3.7"

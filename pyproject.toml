@@ -24,9 +24,6 @@ classifiers = [
 python = ">=3.9,<4"
 sphinx = "^7.3.7"
 
-[tool.poetry.exras]
-doc = ["pydata-sphinx-theme", "sphinx"]
-
 [project.urls]
 homepage = "https://github.com/lasp/"
 repository = "https://github.com/lasp/developer-guide"

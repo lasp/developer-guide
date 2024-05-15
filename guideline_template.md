@@ -7,7 +7,7 @@ An explanation of how this guideline supports DS workflows, meets internal and e
 and aids in collaboration and our overall success
 
 ## Options for this guideline
-An explanation of the options available for this standard (could be one or more options)
+An explanation of the options available for this guideline (could be one or more options)
 
 ## How to apply this guideline
 Detailed instructions or general guidance for implementation of the guideline

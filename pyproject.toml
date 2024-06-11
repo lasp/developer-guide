@@ -27,3 +27,6 @@ sphinx = "^7.3.7"
 [project.urls]
 homepage = "https://github.com/lasp/"
 repository = "https://github.com/lasp/developer-guide"
+
+[tool.codespell]
+ignore-words-list = "nd"

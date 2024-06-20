@@ -14,7 +14,7 @@ use any part of the code legally. This guide provides options for choosing the r
 
 To avoid copyright concerns, it is recommended that:
 1. Any software created by LASP is properly licensed to provide sufficient guidance on their usage
-2. Any software used by LASP are licenced and used accordingly to protect against potential legal action from the owner of that intellectual property
+2. Any software used by LASP are licensed and used accordingly to protect against potential legal action from the owner of that intellectual property
 
 
 The following table is taken from The Turing Way and shows the
@@ -55,7 +55,7 @@ different categories of licenses available and the types of licenses that suppor
 Free Licenses are classified as Copyleft or Permissive. Copyleft licenses (GPL-style) say that all derivative works must preserve the same rights as the original work. So, if it is an open-source program currently, you can NOT use that code in your closed-source program. Because of this, many people don’t consider this as “open” as the more permissive licenses that would allow someone else to use their code in a commercial closed-source product.
 
 
-In general, choose a permissive license for your project in Data Systems (***Are there instances where we would need a more restrictive license?***).
+In general, choose a permissive license for your project in Data Systems.
 
 Some fairly common options:
 

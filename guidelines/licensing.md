@@ -100,7 +100,7 @@ You can mix and match the qualifiers on the data rights depending on what limita
 ## How to apply this guideline
 
 ### Software
-1. Make sure that you put the license file in the root directory and call it “LICENSE” or “LICENSE.md” so that the code repository (GitHub, GitLab, Bitbucket) can immediately identify what license your code is released under and let contributors know.
+1. Make sure that you put the license file in the root directory and call it `LICENSE` or `LICENSE.md` so that the code repository (GitHub, GitLab, Bitbucket) can immediately identify what license your code is released under and let contributors know.
 2. Fill out the copyright, noting that it is NOT LASP, but Regents of CU.
 Copyright (c) 2020, Regents of the University of Colorado
 3. Get a DOI for major version software releases: https://zenodo.org/ and link it to the LASP community in Zenodo.

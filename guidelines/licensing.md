@@ -109,10 +109,7 @@ Copyright (c) 2020, Regents of the University of Colorado
 ## Useful Links
 
 * [Public license selector](https://ufal.github.io/public-license-selector/)
-
 * [Choose a license](https://choosealicense.com/)
-
 * [Open Source Initiative (OSI)](https://opensource.org/licenses)
-
 * [The Turing Way overview of licensing](https://the-turing-way.netlify.app/reproducible-research/licensing)
 * [Free and Open Source License Comparison chart](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)

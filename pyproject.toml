@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-myst-parser = "^3.0.1"
+myst_parser = "^3.0.1"
 python = ">=3.9,<4"
 sphinx = "^7.3.7"
 sphinx-rtd-theme = "^2.0.0"

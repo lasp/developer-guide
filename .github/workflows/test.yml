@@ -1,4 +1,4 @@
-name: Tests
+name: Dependency Check
 
 on:
   pull_request:

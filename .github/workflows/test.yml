@@ -2,7 +2,7 @@ name: Dependency Check
 
 on:
   pull_request:
-    types: [opened, reopened, edited]
+    types: [opened, synchronize, edited]
 
 jobs:
   build:

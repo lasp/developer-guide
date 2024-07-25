@@ -86,9 +86,9 @@ without knowing how the data are stored, and metadata information may be stored 
     * long_name
     * units
 * Conventions
-  * Climate and Forecast (CF)
-  * Attribute Convention for Data Discovery (ACDD)
-  * udunits: standard units
+  * [Climate and Forecast (CF)](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html)
+  * [Attribute Convention for Data Discovery (ACDD)](https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3)
+  * [udunits](https://www.unidata.ucar.edu/software/udunits/): standard units
 
 #### Other useful variable attributes
 * missing_value
@@ -96,7 +96,7 @@ without knowing how the data are stored, and metadata information may be stored 
   * NaN is a good option
 * valid_range, valid_min, valid_max
 * scale_factor, add_offset (packed values)
-* cell_methods: standards for representing data cells (bins)
+* [cell_methods](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#_data_representative_of_cells): standards for representing data cells (bins)
   * e.g. daily average, wavelength bins
 
 ## Useful Links

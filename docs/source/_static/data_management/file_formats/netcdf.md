@@ -2,14 +2,14 @@
 >**Warning**
 > This guide needs additional information
 
-NetCDF (Network Common Data Form), is a file format that stores data in arrays. Array values may be accessed directly,
-without knowing how the data are stored, and metadata information may be stored with the data.
+NetCDF (Network Common Data Form), is a file format that stores scientific data in arrays. Array values may be accessed
+directly, without knowing how the data are stored, and metadata information may be stored with the data.
 
 * Binary file format commonly used for scientific data
 * Self-describing, includes metadata
 * Multi-dimensional array data model
 
-#### Data Model (Essentials)
+The [netCDF data model](https://docs.unidata.ucar.edu/netcdf-c/current/netcdf_data_model.html) consists of the following:
 * variable
   * Multi-dimensional array
   * Column-oriented: each variable as a separate entity
@@ -24,8 +24,9 @@ without knowing how the data are stored, and metadata information may be stored 
 
 
 ## Purpose for this guideline
+NetCDF is a file format commonly used at LASP...
 
-#### Why Use NetCDF?
+Benefits of using netCDF:
 * Self-describing
   * structure captures coordinate system (functional relationship)
   * includes metadata
@@ -39,7 +40,7 @@ without knowing how the data are stored, and metadata information may be stored 
 * Open specification (unlike IDL save files)
 
 ## Options for this guideline
-
+There are two netCDF data models:
 * NetCDF-3 classic
 * NetCDF-4 built on HDF5
   * recommended but prefer classic constructs

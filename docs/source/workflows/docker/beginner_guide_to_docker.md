@@ -190,3 +190,5 @@ docker image prune
 * **pip** = Pip Installs Packages
 * **ps** = Process Status
 * **tty** = TeleTYpe (terminal)
+
+*Credit: Content taken from a Confluence guide written by Maxine Hartnett*

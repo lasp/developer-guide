@@ -81,3 +81,5 @@ down to 1. This will obviously impact performance in other ways, but may help av
 * **CPU** = Central Processing Unit
 * **ps** = Process Status
 * **RHEL** = Red Hat Enterprise Linux
+
+*Credit: Content taken from a Confluence guide written by Maxine Hartnett*

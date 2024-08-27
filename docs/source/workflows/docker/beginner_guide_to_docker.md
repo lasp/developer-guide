@@ -181,3 +181,12 @@ docker image prune
 * [Installing Docker engine](https://docs.docker.com/engine/install/)
 * [Installing Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/)
 * [Docker CLI cheatsheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf)
+
+## Acronyms
+
+* **apk** = Alpine Package Keeper
+* **amd64** = 64-bit Advanced Micro Devices
+* **AWS** = Amazon Web Services
+* **pip** = Pip Installs Packages
+* **ps** = Process Status
+* **tty** = TeleTYpe (terminal)

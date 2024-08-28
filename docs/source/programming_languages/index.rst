@@ -1,7 +1,7 @@
 Programming Languages
 =====================
 
-..toctree::
-    :maxdepth: 1
+.. toctree::
+   :maxdepth: 1
 
     python/index

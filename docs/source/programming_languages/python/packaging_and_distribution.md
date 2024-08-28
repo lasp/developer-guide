@@ -30,8 +30,8 @@ name = "my_python_package"
 version = "0.1.0"
 description = "Science data processing library and applications for some instrument."
 authors = [  # Alphabetical
-    "Jane Doe <jane.doe@lasp.colorado.edu>",
-    "John Doe <john.doe@lasp.colorado.edu>"
+    "Jane Doe <jane.doeATlasp.colorado.edu>",
+    "John Doe <john.doeATlasp.colorado.edu>"
 ]
 
 # Configure private PyPI repo to download packages
@@ -121,7 +121,7 @@ setup(
     name='my_py_library',
     version='0.1.0',
     author='Jane Doe, John Doe, This is just a str',
-    author_email='jane.doe@lasp.colorado.edu',
+    author_email='jane.doeATlasp.colorado.edu',
     description='Science data processing pipeline for the instrument',
     long_description=open('README.md', 'r').read(),  # Reads the readme file
     python_requires='>=3.8, <4',

@@ -19,7 +19,7 @@
 
 - [Getting a PyPI access token](https://pypi.org/help/#apitoken)
 
-#### How to Apply this guideline
+## How to Apply this guideline
 ### Poetry Project Configuration Example – Library Package
 ```
 # pyproject.toml

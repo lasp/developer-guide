@@ -2,6 +2,6 @@ Python
 =====================
 
 ..toctree::
-    :maxdepth:
+    :maxdepth: 1
 
-    packaging_and_distbrution
+    packaging_and_distribution

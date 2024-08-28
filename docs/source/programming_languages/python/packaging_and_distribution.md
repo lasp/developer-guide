@@ -1,13 +1,18 @@
-> :warning: **Warning:** More information is needed to complete this guideline
+> **Warning:** More information is needed to complete this guideline
 
 # Python Packaging and Distribution
 > **Warning** Need to add a short description of the guideline
 
-## Purpose for this guideline
+## Purpose
 > **Warning** Need to add an explanation of how this guideline supports DS workflows, meets internal and external
 > policies, and aids in collaboration and our overall success
 
-## Options and Applications for this guideline
+## Options
+The options for Python packaging and distribution that we often see used at LASP are:
+- [PyPI](#pypi--pip-install-)
+- [Built-In](#built-in--build--twine-)
+- [Poetry](#poetry)
+- [Conda](#conda--conda-install-)
 
 ### PyPI (`pip install`)
 
@@ -19,8 +24,38 @@
 
 - [Getting a PyPI access token](https://pypi.org/help/#apitoken)
 
-## How to Apply this guideline
-### Poetry Project Configuration Example – Library Package
+#### How to Use PyPI
+> **Warning** Need to add
+
+
+### Built-In (`build` + `twine`)
+
+> **Warning**: Need to add introductory paragraph that summarizes Built-In
+
+#### Built-In resources
+
+- [Python Packaging User Guide](https://packaging.python.org/en/latest/)
+
+#### How to use Built-In
+The link below is a fairly complete tutorial. There are also instructions there for using various other build tools.
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+### Poetry
+
+> **Warning**: Need to add introductory paragraph that summarizes Built-In
+
+[Poetry Build and Publish Docs](https://python-poetry.org/docs/cli/#build):
+```
+poetry lock
+poetry install
+poetry version
+poetry build
+PYPI_USERNAME=__token__
+PYPI_TOKEN=<token-copied-from-pypi-account>
+poetry publish  # You will be prompted for your PyPI credentials if you don't provide the environment variables
+```
+
+#### Poetry Project Configuration Example – Library Package
 ```
 # pyproject.toml
 # See: https://python-poetry.org/docs/pyproject/
@@ -70,37 +105,12 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 ```
 
-### Built-In (build + twine)
-
-#### Built-In resources
-
-- [Python Packaging User Guide](https://packaging.python.org/en/latest/):
-
-#### How to Apply this guideline
-The link below is a pretty complete tutorial. There are also instructions for using
-various other build tools.
-
-https://packaging.python.org/en/latest/tutorials/packaging-projects/
-
-### Poetry
-
-[Poetry Build and Publish Docs](https://python-poetry.org/docs/cli/#build):
-
-poetry lock
-poetry install
-poetry version
-poetry build
-PYPI_USERNAME=__token__
-PYPI_TOKEN=<token-copied-from-pypi-account>
-poetry publish  # You will be prompted for your PyPI credentials if you don't provide the environment variables
-
-### Packaging for Conda (`conda install`)
-Conda
-
+### Conda (`conda install`)
 > **Need Help:** Anyone want to volunteer to write this section? TAG
 
 ## How to apply this guideline
 Detailed instructions or general guidance for implementation of the guideline
+
 ## Examples
 
 ### Setuptools Example – Library Package
@@ -153,7 +163,7 @@ setup(
 
 ### Conda Package
 
-> :warning: Need a volunteer.
+> Need a volunteer.
 https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html
 
 ## Useful Links
@@ -167,40 +177,11 @@ Here are some helpful resources:
 - [Setuptools Documentation](https://setuptools.pypa.io/en/latest/)
 - [Building conda packages from scratch](https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html)
 
-
-
-## Some Terminology
-### Library Packages vs Applications vs Scripts
-
-Python is a highly flexible interpreted language. This means it's easy to get started, quick to write, and easy to run.
-Unfortunately, this also means it's very easy to write code that works in one context but not in others or code that is
-robust but isn't designed to be inherited.
-
-Library Package: A python package, intended for redistribution, containing objects that serve as building blocks for
-other developers to use. Examples are `numpy`, `pytest`, and `sqlalchemy`.
-
-Application: A python project (which may or may not be a packaged distribution) that provides specific and possibly
-configurable functionality. Examples are Poetry, the AWS CLI, the Conda CLI, the Green Unicorn WSGI HTTP server, any
-Django "app".
-
-Script: Pretty much anything else written in Python. One could arguably say that a Script is just a trivial Application
-with little configuration or portability. Scripts are usually run with `python my_script.py argv`. They tend to be
-difficult to maintain, update, or distribute.
-
-> **Note** A Python "package" is any directory containing an __init__.py file.
-
-Packaging Tooling: Not only managing a local environment, but also providing tooling for developing, building, and
-distributing python packages for other users. While Conda does support this use case (it's how one creates and
-distributes conda packages to conda-forge), Poetry and setuptools are much easier to develop with (for PyPI) and Poetry
-boasts a similar dependency resolver to Conda. One major drawback to Conda in packaging is that there is no notion of an
-"editable install" so the developer is forced to build and test end user functionality (e.g. script entrypoints) over
-and over instead of simply making code changes in place.
-
-> :warning: Conda Develop:
-> There is a conda subcommand called conda develop but it is not maintained and has a lot of issues. The maintainers of
-conda recommend using pip install to install an editable package in development mode.
+> Conda Develop:
+> There is a conda subcommand called `conda develop`, but it is not actively maintained. The maintainers of
+conda recommend using `pip install` to install an editable package in development mode.
 
 See: https://github.com/conda/conda-build/issues/1992
 
 
-Original Author: Gavin Medley
+Credit: Content taken from a Confluence page originally written by Gavin Medley

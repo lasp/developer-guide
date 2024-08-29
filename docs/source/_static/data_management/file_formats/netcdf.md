@@ -23,10 +23,12 @@ The [netCDF data model](https://docs.unidata.ucar.edu/netcdf-c/current/netcdf_da
   * Avoid unless you really need the complex structure
 
 
-## Purpose for this guideline
-NetCDF is a file format commonly used at LASP...
+## Why use NetCDF
+NetCDF is a file format commonly used at LASP as it is the "highly preferred" format for NASA Earth Observing System
+Data and Information System data products, per their Data Product Development Guide for Data Producers.
+This affects all NASA Earth Science missions.
 
-Benefits of using netCDF:
+NetCDF features:
 * Self-describing
   * structure captures coordinate system (functional relationship)
   * includes metadata
@@ -39,13 +41,13 @@ Benefits of using netCDF:
   * parallel IO
 * Open specification (unlike IDL save files)
 
-## Options for this guideline
+## Options available
 There are two netCDF data models:
 * NetCDF-3 classic
 * NetCDF-4 built on HDF5
   * recommended but prefer classic constructs
 
-## How to apply this guideline
+## How to use this data format
 
 #### NetCDF Files
 * Binary format with open specification
@@ -92,9 +94,10 @@ There are two netCDF data models:
   * [udunits](https://www.unidata.ucar.edu/software/udunits/): standard units
 
 #### Other useful variable attributes
-* missing_value
-  * prefer over _FillValue
-  * NaN is a good option
+* _FillValue
+  * missing_value is considered deprecated and is not recommended by the NetCDF Users Group.
+  * NaN is another option, however, NaNs in files are handled differently in every language and so it may
+  be better to pick a value for official data products that many users will be using
 * valid_range, valid_min, valid_max
 * scale_factor, add_offset (packed values)
 * [cell_methods](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#_data_representative_of_cells): standards for representing data cells (bins)
@@ -103,6 +106,7 @@ There are two netCDF data models:
 ## Useful Links
 * [NetCDF User's Guide](https://docs.unidata.ucar.edu/nug/current/)
 * [NetCDF ToolsUI](https://docs.unidata.ucar.edu/netcdf-java/current/userguide/toolsui_ref.html)
+* [NetCDF Workshop Materials](https://www.unidata.ucar.edu/software/netcdf/workshops/2011/index.html)
 
 
 Credit: Content taken from a Confluence guide written by Doug Lindholm

@@ -1,8 +1,8 @@
 # Python Terminology
 
-Provide explanations of Python terminology that a user might encounter.
+Some Python terminology that a user might encounter, particularly when working through this Python guide.
 
-## Purpose for this guideline
+## Purpose
 Like all programming languages, Python has some terminology that is unique to it and it is helpful to have that language
 explained. This page may be updated over time so that it holds the most useful terminology to those that use this
 developer's guide.
@@ -13,8 +13,10 @@ Python is a highly flexible interpreted language. This means it's easy to get st
 Unfortunately, this also means it's very easy to write code that works in one context but not in others or code that is
 robust but isn't designed to be inherited.
 
-**Library Package**: A python package, intended for redistribution, containing objects that serve as building blocks for
+**Package**: A `python` package, intended for redistribution, containing objects that serve as building blocks for
 other developers to use. Examples are `numpy`, `pytest`, and `sqlalchemy`.
+
+> **Note** A Python "package" is any directory containing an `__init__.py` file.
 
 **Application**: A python project (which may or may not be a packaged distribution) that provides specific and possibly
 configurable functionality. Examples are Poetry, the AWS CLI, the Conda CLI, the Green Unicorn WSGI HTTP server, any
@@ -24,9 +26,7 @@ Django "app".
 with little configuration or portability. Scripts are usually run with `python my_script.py argv`. They tend to be
 difficult to maintain, update, or distribute.
 
-> **Note** A Python "package" is any directory containing an `__init__.py` file.
-
-Packaging Tooling: Not only managing a local environment, but also providing tooling for developing, building, and
+**Packaging Tooling**: Not only managing a local environment, but also providing tooling for developing, building, and
 distributing python packages for other users. While Conda does support this use case (it's how one creates and
 distributes conda packages to `conda-forge`), Poetry and `setuptools` are much easier to develop with (for PyPI) and Poetry
 boasts a similar dependency resolver to Conda. One major drawback to Conda in packaging is that there is no notion of an

@@ -1,6 +1,6 @@
 # developer-guide
 
-This repository provides guidelines for software developers at LASP
+This repository provides guidelines for software developers at LASP. You can view the developer guide here: http://lasp-developer-guide.readthedocs.io/
 
 ## Contributing
 

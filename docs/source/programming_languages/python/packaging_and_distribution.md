@@ -1,7 +1,7 @@
 > **Warning:** More information is needed to complete this guideline
 
 # Python Packaging and Distribution
-> **Warning** Need to add a short description of the guideline
+Examples of Python packaging and distribution options and how use them.
 
 ## Purpose
 > **Warning** Need to add an explanation of how this guideline supports DS workflows, meets internal and external
@@ -9,12 +9,10 @@
 
 ## Options
 The options for Python packaging and distribution that we often see used at LASP are:
-- [PyPI](#pypi--pip-install-)
-- [Built-In](#built-in--build--twine-)
-- [Poetry](#poetry)
-- [Conda](#conda--conda-install-)
+- [PyPI](#packaging-for-pypi--pip-install-)
+- [Conda](#packaging-for-conda--conda-install-)
 
-### PyPI (`pip install`)
+### Packaging for PyPI (`pip install`)
 
 #### PyPI resources:
 
@@ -24,96 +22,24 @@ The options for Python packaging and distribution that we often see used at LASP
 
 - [Getting a PyPI access token](https://pypi.org/help/#apitoken)
 
-#### How to Use PyPI
-> **Warning** Need to add
 
-
-### Built-In (`build` + `twine`)
+#### Built-In (`build` + `twine`)
 
 > **Warning**: Need to add introductory paragraph that summarizes Built-In
 
-#### Built-In resources
+##### How to use Built-In
+Python Packaging User Guide: https://packaging.python.org/en/latest/
+The link below is a fairly complete tutorial. There are also instructions there for using various other build tools:
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+##### Built-In resources
 
 - [Python Packaging User Guide](https://packaging.python.org/en/latest/)
 
-#### How to use Built-In
-The link below is a fairly complete tutorial. There are also instructions there for using various other build tools.
-https://packaging.python.org/en/latest/tutorials/packaging-projects/
+##### Setuptools Example – Library Package
+<details>
+  <summary>setup.py</summary>
 
-### Poetry
-
-> **Warning**: Need to add introductory paragraph that summarizes Built-In
-
-[Poetry Build and Publish Docs](https://python-poetry.org/docs/cli/#build):
-```
-poetry lock
-poetry install
-poetry version
-poetry build
-PYPI_USERNAME=__token__
-PYPI_TOKEN=<token-copied-from-pypi-account>
-poetry publish  # You will be prompted for your PyPI credentials if you don't provide the environment variables
-```
-
-#### Poetry Project Configuration Example – Library Package
-```
-# pyproject.toml
-# See: https://python-poetry.org/docs/pyproject/
-
-[tool.poetry]
-name = "my_python_package"
-version = "0.1.0"
-description = "Science data processing library and applications for some instrument."
-authors = [  # Alphabetical
-    "Jane Doe <jane.doe@lasp.colorado.edu>",
-    "John Doe <john.doe@lasp.colorado.edu>"
-]
-
-# Configure private PyPI repo to download packages
-[[tool.poetry.source]]
-name = "lasp-pypi"  # This name will be used in the configuration to retrieve the proper credentials
-url = "https://artifacts.pdmz.lasp.colorado.edu/repository/lasp-pypi/simple"  # URL used to download your private packages
-
-# Dependency specification for core package
-[tool.poetry.dependencies]
-python = "^3.9"
-astropy = "^4.2.1"
-h5py = "^3.3.0"
-numpy = "^1.21.0"
-spiceypy = "^4.0.1"
-lasp-packets = "1.2"
-requests = "^2.26.0"
-SQLAlchemy = "^1.4.27"
-psycopg2 = "^2.9.2"
-cloudpathlib = {extras = ["s3"], version = "^0.6.2"}
-
-# Development dependencies
-[tool.poetry.dev-dependencies]
-pytest-cov = "^2.12.1"
-pylint = "^2.9.3"
-responses = "^0.14.0"
-pytest-randomly = "^3.10.2"
-moto = {extras = ["s3"], version = "^2.2.16"}
-
-# Script entrypoints to put in installed bin directory
-[tool.poetry.scripts]
-sdp = 'my_python_package.cli:main'
-
-# Poetry boilerplate
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-```
-
-### Conda (`conda install`)
-> **Need Help:** Anyone want to volunteer to write this section? TAG
-
-## How to apply this guideline
-Detailed instructions or general guidance for implementation of the guideline
-
-## Examples
-
-### Setuptools Example – Library Package
 ```
 """
 Setup file for the science data processing pipeline.
@@ -160,10 +86,85 @@ setup(
     }
 )
 ```
+</details>
 
-### Conda Package
 
-> Need a volunteer.
+#### Poetry
+
+> **Warning**: Need to add introductory paragraph that summarizes Built-In
+
+[Poetry Build and Publish Docs](https://python-poetry.org/docs/cli/#build)
+
+How to Publish to PyPI from Poetry
+```
+poetry lock
+poetry install
+poetry version
+poetry build
+PYPI_USERNAME=__token__
+PYPI_TOKEN=<token-copied-from-pypi-account>
+poetry publish  # You will be prompted for your PyPI credentials if you don't provide the environment variables
+```
+
+##### Poetry Project Configuration Example – Library Package
+
+<details>
+  <summary>pyproject.toml</summary>
+
+  ```
+    # pyproject.toml
+    # See: https://python-poetry.org/docs/pyproject/
+
+    [tool.poetry]
+    name = "my_python_package"
+    version = "0.1.0"
+    description = "Science data processing library and applications for some instrument."
+    authors = [  # Alphabetical
+        "Jane Doe <jane.doe@lasp.colorado.edu>",
+        "John Doe <john.doe@lasp.colorado.edu>"
+    ]
+
+    # Configure private PyPI repo to download packages
+    [[tool.poetry.source]]
+    name = "lasp-pypi"  # This name will be used in the configuration to retrieve the proper credentials
+    url = "https://artifacts.pdmz.lasp.colorado.edu/repository/lasp-pypi/simple"  # URL used to download your private packages
+
+    # Dependency specification for core package
+    [tool.poetry.dependencies]
+    python = "^3.9"
+    astropy = "^4.2.1"
+    h5py = "^3.3.0"
+    numpy = "^1.21.0"
+    spiceypy = "^4.0.1"
+    lasp-packets = "1.2"
+    requests = "^2.26.0"
+    SQLAlchemy = "^1.4.27"
+    psycopg2 = "^2.9.2"
+    cloudpathlib = {extras = ["s3"], version = "^0.6.2"}
+
+    # Development dependencies
+    [tool.poetry.dev-dependencies]
+    pytest-cov = "^2.12.1"
+    pylint = "^2.9.3"
+    responses = "^0.14.0"
+    pytest-randomly = "^3.10.2"
+    moto = {extras = ["s3"], version = "^2.2.16"}
+
+    # Script entrypoints to put in installed bin directory
+    [tool.poetry.scripts]
+    sdp = 'my_python_package.cli:main'
+
+    # Poetry boilerplate
+    [build-system]
+    requires = ["poetry-core>=1.0.0"]
+    build-backend = "poetry.core.masonry.api"
+  ```
+</details>
+
+### Packaging for Conda (`conda install`)
+> **Warning**: Need a volunteer
+
+## How to install and use Conda
 https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html
 
 ## Useful Links
@@ -180,8 +181,7 @@ Here are some helpful resources:
 > Conda Develop:
 > There is a conda subcommand called `conda develop`, but it is not actively maintained. The maintainers of
 conda recommend using `pip install` to install an editable package in development mode.
+> See: https://github.com/conda/conda-build/issues/1992
 
-See: https://github.com/conda/conda-build/issues/1992
 
-
-Credit: Content taken from a Confluence page originally written by Gavin Medley
+Credit: Content taken from a Confluence guide written by Gavin Medley

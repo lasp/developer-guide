@@ -16,7 +16,8 @@ robust but isn't designed to be inherited.
 **Package**: A `python` package, intended for redistribution, containing objects that serve as building blocks for
 other developers to use. Examples are `numpy`, `pytest`, and `sqlalchemy`.
 
-> **Note** A Python "package" is any directory containing an `__init__.py` file.
+> **Note** While most people think of a Python package as the above definition, a Python "package" is technically
+> any directory containing an `__init__.py` file.
 
 **Application**: A python project (which may or may not be a packaged distribution) that provides specific and possibly
 configurable functionality. Examples are Poetry, the AWS CLI, the Conda CLI, the Green Unicorn WSGI HTTP server, any
@@ -36,4 +37,4 @@ and over instead of simply making code changes in place.
 ## Useful Links
 Helpful links to additional resources on the topic
 
-Credit: Content taken from a Confluence page originally written by Gavin Medley
+Credit: Content taken from a Confluence guide written by Gavin Medley

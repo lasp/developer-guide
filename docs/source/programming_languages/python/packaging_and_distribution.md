@@ -12,9 +12,9 @@ The options for Python packaging and distribution that we often see used at LASP
 - [PyPI](#packaging-for-pypi--pip-install-)
 - [Conda](#packaging-for-conda--conda-install-)
 
-### Packaging for PyPI (`pip install`)
+## Packaging for PyPI (`pip install`)
 
-#### PyPI resources:
+### PyPI resources:
 
 - [PyPI Help Page](https://pypi.org/help/)
 
@@ -23,20 +23,20 @@ The options for Python packaging and distribution that we often see used at LASP
 - [Getting a PyPI access token](https://pypi.org/help/#apitoken)
 
 
-#### Built-In (`build` + `twine`)
+### Built-In (`build` + `twine`)
 
 > **Warning**: Need to add introductory paragraph that summarizes Built-In
 
-##### How to use Built-In
+#### How to use Built-In
 Python Packaging User Guide: https://packaging.python.org/en/latest/
 The link below is a fairly complete tutorial. There are also instructions there for using various other build tools:
 https://packaging.python.org/en/latest/tutorials/packaging-projects/
 
-##### Built-In resources
+#### Built-In resources
 
 - [Python Packaging User Guide](https://packaging.python.org/en/latest/)
 
-##### Setuptools Example – Library Package
+#### Setuptools Example – Library Package
 <details>
   <summary>setup.py</summary>
 
@@ -88,8 +88,7 @@ setup(
 ```
 </details>
 
-
-#### Poetry
+### Poetry
 
 > **Warning**: Need to add introductory paragraph that summarizes Built-In
 
@@ -106,7 +105,7 @@ PYPI_TOKEN=<token-copied-from-pypi-account>
 poetry publish  # You will be prompted for your PyPI credentials if you don't provide the environment variables
 ```
 
-##### Poetry Project Configuration Example – Library Package
+#### Poetry Project Configuration Example – Library Package
 
 <details>
   <summary>pyproject.toml</summary>
@@ -161,10 +160,10 @@ poetry publish  # You will be prompted for your PyPI credentials if you don't pr
   ```
 </details>
 
-### Packaging for Conda (`conda install`)
+## Packaging for Conda (`conda install`)
 > **Warning**: Need a volunteer
 
-## How to install and use Conda
+### How to install and use Conda
 https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html
 
 > Conda Develop:

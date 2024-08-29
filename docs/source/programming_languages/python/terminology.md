@@ -1,7 +1,6 @@
-## Some Terminology
+# Python Terminology
 
 Provide explanations of Python terminology that a user might encounter.
-
 
 ## Purpose for this guideline
 Like all programming languages, Python has some terminology that is unique to it and it is helpful to have that language

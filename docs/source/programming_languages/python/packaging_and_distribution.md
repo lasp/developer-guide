@@ -167,6 +167,11 @@ poetry publish  # You will be prompted for your PyPI credentials if you don't pr
 ## How to install and use Conda
 https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html
 
+> Conda Develop:
+> There is a conda subcommand called `conda develop`, but it is not actively maintained. The maintainers of
+conda recommend using `pip install` to install an editable package in development mode.
+> See: https://github.com/conda/conda-build/issues/1992
+
 ## Useful Links
 Here are some helpful resources:
 
@@ -177,11 +182,5 @@ Here are some helpful resources:
 - [Poetry Documentation](https://python-poetry.org/docs/)
 - [Setuptools Documentation](https://setuptools.pypa.io/en/latest/)
 - [Building conda packages from scratch](https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html)
-
-> Conda Develop:
-> There is a conda subcommand called `conda develop`, but it is not actively maintained. The maintainers of
-conda recommend using `pip install` to install an editable package in development mode.
-> See: https://github.com/conda/conda-build/issues/1992
-
 
 Credit: Content taken from a Confluence guide written by Gavin Medley

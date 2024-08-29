@@ -1,5 +1,7 @@
 # developer-guide
 
+This repository provides guidelines for software developers at LASP. You can view the developer guide here: http://lasp-developer-guide.readthedocs.io/
+
 ## Purpose
 
 The purpose of this repository is to provide a collection of documented guidelines for software development workflows

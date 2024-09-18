@@ -7,4 +7,5 @@ Welcome to the LASP Developer's Guide!
    :maxdepth: 1
 
    licensing
+   data_management/index
    workflows/index

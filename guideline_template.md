@@ -14,3 +14,5 @@ Detailed instructions or general guidance for implementation of the guideline
 
 ## Useful Links
 Helpful links to additional resources on the topic
+
+Credit: Content taken from a Confluence guide written by <add_name>

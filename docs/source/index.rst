@@ -8,3 +8,5 @@ Welcome to the LASP Developer's Guide!
 
    licensing
    programming_languages/index
+   data_management/index
+   workflows/index

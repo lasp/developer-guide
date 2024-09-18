@@ -1,7 +1,7 @@
-> **Warning:** More information is needed to complete this guideline
+> **Warning:** More information is needed to complete this guideline.
 
 # Python Packaging and Distribution
-Examples of Python packaging and distribution options and how use them.
+Examples of Python packaging and distribution options and how to use them.
 
 ## Purpose
 > **Warning** Need to add an explanation of how this guideline supports DS workflows, meets internal and external
@@ -90,7 +90,7 @@ setup(
 
 ### Poetry
 
-> **Warning**: Need to add introductory paragraph that summarizes Built-In
+> **Warning**: Need to add introductory paragraph that summarizes Poetry
 
 [Poetry Build and Publish Docs](https://python-poetry.org/docs/cli/#build)
 
@@ -161,7 +161,7 @@ poetry publish  # You will be prompted for your PyPI credentials if you don't pr
 </details>
 
 ## Packaging for Conda (`conda install`)
-> **Warning**: Need a volunteer
+> **Warning**: Need a volunteer to expand on Conda
 
 ### How to install and use Conda
 https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html

@@ -9,7 +9,7 @@ This documentation was inspired by the processes of containerizing
 the [Jenkins TIM test suite](https://confluence.lasp.colorado.edu/display/DS/TIM+Containers+Archive), and providing
 multiple ways of running the tests -- both through Intellij, and locally, plut the ability to add additional ways of
 testing if they came up. Additionally, there are a few complications with the ways that [Red Hat VMs run on the Mac M1
-chips](./running_docker_with_m1.md) that was introduced in 2020. All of these requirements led the TIM developers to use
+chips](running_docker_with_m1) that was introduced in 2020. All of these requirements led the TIM developers to use
 something that allows for a lot of flexibility and simplification in one Dockerfile: multi-stage builds and a docker
 compose file. This guideline will go over the general use case of both technologies and the specific use case of using
 them for local TIM tests.

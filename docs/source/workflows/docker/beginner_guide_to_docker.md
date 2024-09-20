@@ -42,7 +42,7 @@ generally find yourself running the same commands for creating containers and wa
 
 **Docker Registry:** A registry or archive store is a place to store and retrieve docker images. This is one way to
 share already-built docker images. LASP has a private repository, in the form of the
-[LASP docker registry](./lasp_docker_registry.md).
+[LASP docker registry](lasp_docker_registry).
 
 So, you define a Docker *image* using a *Dockerfile* and/or a *Docker Compose* file. Running this image produces a
 Docker *container*, which runs your code and environment. An image can be pushed up to a *registry*, where anyone with
@@ -59,9 +59,9 @@ the current directory for a file named `Dockerfile` by default, but you can spec
 arguments or through your docker compose file.
 
 Generally, each Docker image should be as small as possible. Each Dockerfile should only do one thing at a time. If you
-have a need for two extremely similar docker containers, you can also use [Multi-stage builds](./multi_stage_builds.md).
-You can orchestrate multiple docker containers that depend on each other using
-[Docker compose](./docker_compose_examples.md).
+have a need for two extremely similar docker containers, you can also use [Multi-stage builds](multi_stage_builds). You
+can orchestrate multiple docker containers that depend on each other using
+[Docker compose](docker_compose_examples).
 
 To start, your Dockerfile should specify the base image using `FROM .`. Then, you can set up the environment by using
 `RUN` commands to run shell commands. Finally, you can finish the container by using a `CMD` command. This is an
@@ -85,12 +85,11 @@ In the same folder, we run the `build` command to build our image:
 docker build --platform linux/amd64 -f Dockerfile -t docker_tutorial:latest .
 ```
 
-The flag `–platform linux/amd64` is optional unless you are [running an M1 chip mac](./running_docker_with_m1.md). The
-`-f` flag indicates the name of the Dockerfile -- in this case, it is also optional, since `Dockerfile` is the default
-value. The `-t` flag is a way to track the docker images and containers on our system by adding a name and a tag.
-`latest` is the tag used to indicate the latest version of a Docker image. Additional useful flags include `--no-cache`
-for a clean rebuild, and you can find a full list of flags
-[here](https://docs.docker.com/reference/cli/docker/buildx/build/).
+The flag `–platform linux/amd64` is optional unless you are [running an M1 chip mac](running_docker_with_m1). The `-f`
+flag indicates the name of the Dockerfile -- in this case, it is also optional, since `Dockerfile` is the default value.
+The `-t` flag is a way to track the docker images and containers on our system by adding a name and a tag. `latest` is
+the tag used to indicate the latest version of a Docker image. Additional useful flags include `--no-cache` for a clean
+rebuild, and you can find a full list of flags [here](https://docs.docker.com/reference/cli/docker/buildx/build/).
 
 Now that we have built the image, we can see all the Docker images that are built on our system by running the
 `docker images` command:
@@ -146,8 +145,8 @@ intervention work. For an example of a system where that's operating, you can re
 in Docker](https://confluence.lasp.colorado.edu/display/DS/Containerize+TIM+Processing+-+Base+Image).
 
 Next steps, beyond going more in depth with the TIM dockerfiles, would be to learn about using the [LASP docker
-registry](./lasp_docker_registry.md). Other topics include [Docker compose](./docker_compose_examples.md), running
-Docker on [M1 chips](./running_docker_with_m1.md), and other pages under the [Docker Guidelines](./index.rst).
+registry](lasp_docker_registry). Other topics include [Docker compose](docker_compose_examples), running Docker on
+[M1 chips](running_docker_with_m1), and other pages under the [Docker Guidelines](index).
 
 ## Docker Cheat Sheet
 

@@ -4,7 +4,7 @@
 
 This document provides a preliminary implementation of IDL in a Docker container.
 
-## A few things to note
+## A Few Things to Note
 
 - Although the implementation described below is only valid for IDL version 8.6 and greater, the Dockerfile could
   presumably be modified to accommodate older versions. The difference is that the network license access is different
@@ -63,7 +63,7 @@ RUN echo 'http://idl-lic.lasp.colorado.edu:7070/fne/bin/capability' >> /usr/loca
 CMD ["/usr/local/harris/idl87/bin/idl"]
 ```
 
-## Stand-alone vs multi-functional container
+## Stand-alone vs Multi-functional Container
 
 If the objective is merely to include IDL in a container with other services, such as Jenkins, gcc, git, Python, etc.,
 simply add the Docker commands from this example into the relevant Dockerfile. Do not include the `FROM` or `CMD`
@@ -81,7 +81,7 @@ The following issues are associated with using IDL in a stand-alone container:
 - Integration of git
 - Integration of `mgunit`
 
-## Build the image
+## Build the Image
 
 To build the image, first copy the Dockerfile example above into a file named `Dockerfile`. If, for any reason, it is
 necessary to maintain a running background container, replace the `CMD` argument with:
@@ -133,7 +133,7 @@ For shell access to the container (possibly necessary for debugging), add `bash`
 `run` command, or replace the `/usr/local/harris/idl87/bin/idl` command with `bash` in the docker container `exec`
 command.
 
-## Host machine access
+## Host Machine Access
 
 The following demonstrates how to utilize IDL by directly interacting with a running container. In this example, the
 (optional) container name is `idl_container` and the name of the (previously created) image is `idl_image`:
@@ -153,7 +153,7 @@ IDL> exit
 (base) stmu4541@MacL3947:~/projects/docker/idl$
 ```
 
-## Cross-container access
+## Cross-container Access
 
 For web applications (e.g., Nginx, MySQL, etc.), accessing one containerized service from within another container
 running on the same host is trivial. Simply create a Docker network, connect both containers to that network, and the
@@ -164,7 +164,7 @@ make it work). The solution, however, is not too difficult. Simply bind mount th
 executable of the host machine to the non-IDL container. These bind mounts will provide access to the Docker service
 running on the host machine from within the non-IDL container.
 
-### Example implementation
+### Example Implementation
 
  In this example a container is created from the official `CentOS` image:
 
@@ -210,7 +210,7 @@ Note that this still results in an interactive session with the IDL container, a
 of remote non-interactive use of the containerized IDL deployment in, for example, a Jenkins build. To achieve this, an
 additional necessary step is the implementation of file sharing between containers.
 
-## Inter-container file sharing
+## Inter-container File Sharing
 
 This section describes the manner in which the IDL container can access files (e.g., IDL procedures or functions) that
 reside in the non-IDL container. Basically, the objective is to share files between containers. This is necessary
@@ -220,7 +220,7 @@ files from a source code repository.
 There are two similar solutions. The preferred approach depends on whether or not it is necessary to access the files
 from the host machine.
 
-### Solution 1 -- Shared name volume
+### Solution 1 -- Shared Name Volume
 
 If there is no need to access the shared files from the host machine, the simplest solution is to create a named Docker
 volume that is shared between the IDL and non-IDL containers.
@@ -228,7 +228,7 @@ volume that is shared between the IDL and non-IDL containers.
 Although, technically, a named volume exists on the host, it is managed by the Docker daemon and is not intended to be
 accessed from the host.
 
-#### On the host machine
+#### On the Host Machine
 
 First, create a named Docker volume:
 
@@ -243,7 +243,7 @@ additional bind mount for the newly-created data volume:
 docker container run --rm -it --name=centos_container -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v SharedData:/src centos bash
 ```
 
-#### In the interactive shell inside the `CentOS` container
+#### In the Interactive Shell Inside the `CentOS` Container
 
 From the interactive shell, create a simple test file in the `/src` directory of the `centos_container` (non-IDL)
 container. For example:
@@ -272,7 +272,7 @@ docker container run --rm -v SharedData:/src idl_image /usr/local/harris/idl87/b
 Hello World
 ```
 
-### Solution 2 -- Host directory bind mount
+### Solution 2 -- Host Directory Bind Mount
 
 Here, file systems in both containers are bind mounted to a common directory on the host machine. This allows file
 access directly from the host machine when necessary.
@@ -308,7 +308,7 @@ The `/Users/stmu4541/projects/docker/src` directory on the host machine, and the
 refer to the same file system. In other words, any file that resides in the `/Users/stmu4541/projects/docker/src` host
 directory or the `/src` directory in the non-IDL container, is visible to the `/src` directory of the IDL container.
 
-## Jenkins as the non-IDL container
+## Jenkins as the Non-IDL Container
 
 Using a Jenkins-based principal container is not significantly different than the example above, except that the
 `CentOS` image is replaced with a Jenkins image -- in this case, `jenkins/jenkins:lts-centos`, which is based on the
@@ -323,7 +323,7 @@ Jenkins image (`jenkins/jenkins:lts-centos`). A Dockerfile is required only when
 tools, such as Ant, Gradle, various compilers, etc.
 
 
-## Run a containerized IDLDE and export the display to the host machine
+## Run a Containerized IDLDE and Export the Display to the Host Machine
 
 Also, see [Export Display from Docker Container - Proof of Concept Confluence
 page](https://confluence.lasp.colorado.edu/display/DS/Export+Display+from+Docker+Container+-+Proof+of+Concept) for a
@@ -358,9 +358,9 @@ docker image build -t idlde_image .
 
 As always, this image build command must be run in the same directory as the relevant Dockerfile.
 
-### Run the containerized IDLDE
+### Run the Containerized IDLDE
 
-#### Pull the IDLDE image from the LASP image registry
+#### Pull the IDLDE Image from the LASP Image Registry
 
 The image can be built locally using the above Dockerfiles and the `docker image build` command, or it can be obtained
 from the [LASP Image Registry](lasp_docker_registry). To pull the image, log into the LASP Image Registry and use the
@@ -377,7 +377,7 @@ like a symbolic link to the same image):
 docker image tag docker-registry.pdmz.lasp.colorado.edu/tsis/idlde_centos7 idlde_image
 ```
 
-#### Run the containerized IDLDE on Linux
+#### Run the Containerized IDLDE on Linux
 
 Run the IDLDE container with the container `DISPLAY` environment parameter set to that of the host machine and bind
 mount the host machine X socket to the container:
@@ -386,7 +386,7 @@ mount the host machine X socket to the container:
 docker container run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix idlde_image
 ```
 
-#### Run the containerized IDLDE on MacOS
+#### Run the Containerized IDLDE on MacOS
 
 The instructions for MacOS adopt a different approach than that for Linux. While there may be a more consistent
 implementation to run the containerized IDLDE on both Linux and MacOS, the following steps will suffice. Note that
@@ -403,6 +403,9 @@ Then simply run the container with the `DISPLAY` environment parameter set to:
 ```bash
 docker container run -e DISPLAY=host.docker.internal:0 idlde_image
 ```
+
+## Useful Links
+* [Official Docker documentation](https://docs.docker.com/)
 
 ## Acronyms
 

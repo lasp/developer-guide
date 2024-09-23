@@ -14,7 +14,7 @@ available for access from the internet, behind WebIAM authentication to be used 
 The LASP Docker Registry is the Sonatype Nexus Repository Pro version. It runs in the DMZ and is behind WebIAM user
 authentication.
 
-## Accessing the registry
+## Accessing the Registry
 
 The Web UI for Nexus is located at [https://artifacts.pdmz.lasp.colorado.edu](https://artifacts.pdmz.lasp.colorado.edu).
 It is not necessary to log into the server to search and browse public repositories using the left-hand navigation menu.
@@ -40,7 +40,7 @@ created in Nexus that allow only specific WebIAM groups to create or push images
 images. Images will be referred to in Docker as `<namespace>/<image>:<tag>` or more precisely
 `<registry>/<namespace>/<image>:<tag>`. See [Creating an Image](#creating-an-image) below for more information.
 
-## Browsing images
+## Browsing Images
 
 Access the Web UI via the URL above. Click on **Browse**:
 
@@ -133,7 +133,7 @@ and clicking "Delete Folder":
 ![Delete an image](../../_static/lasp_docker_registry_delete_image2.png)
 
 
-## Pulling an image
+## Pulling an Image
 
 1. Login to the remote registry using your username/password. Note that this is only necessary if you are accessing a
 docker image that is NOT in a public namespace:

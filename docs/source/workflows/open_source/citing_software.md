@@ -44,7 +44,7 @@ project.
     + Go to your Zenodo account settings.
     + Click on the "GitHub" tab
     + Click on the DOI badge icon next to the repository to get the markdown code to add a DOI badge to your repository's
-      README.md file.
+      `README.md` file.
 
 #### Manually uploading to Zenodo:
 Don't have a GitHub account? If you're using bitbucket or another service, a DOI can still be created by

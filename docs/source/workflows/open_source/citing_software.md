@@ -64,15 +64,23 @@ manually uploading it to Zenodo.
 Note: The total file size limit per record is 50GB (max 100 files). A one-time 100GB quota can be requested and granted on a case-by-case basis.
 
 ## Helpful resources
+* [Learn more about NASA's SPD-41a policy](https://science.nasa.gov/researchers/science-information-policy/)
 * [Learn more about Zenodo](https://about.zenodo.org/)
 * [Step-by-step instructions using Zenodo from the University of Iowa](https://www.lib.uiowa.edu/data/files/2022/10/Share_and_Preserve_Your_Code_20220728.pdf)
-* [GitHub information on using Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+* [GitHub's information on using Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 * There are multiple ways to cite authors for software. One method is to list the name of each contributor.
   Since the list of contributors may change from release to release, a contributors list in the repository
   can help track these updates and ensure proper attribution. Another option is to list a group or organization
-  as the author (i.e.  <project name> Developers) and recognize individual contributors via the all-contributors bot.
+  as the author (i.e.  `<project name>` Developers) and recognize individual contributors via the all-contributors bot.
   The [icepyx software](https://icepyx.readthedocs.io/en/development/contributing/attribution_link.html) provides a
   good example of this second approach, which follows guidance from the [Turing Way](https://the-turing-way.netlify.app/communication/aa/aa-equitable)
   project.
+
+## Acronyms
+
+* **DOI** = Digital Object Identifier
+* **API** = Application Programming Interface
+* **SMD** = Science Mission Directorate
+
 
 Credit: Content taken from a Confluence guide written by Veronica Martinez

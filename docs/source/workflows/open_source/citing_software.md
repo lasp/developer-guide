@@ -25,7 +25,7 @@ project.
 1. **Make your code public**: If your code is not already public, make it public on GitHub. Ensure that you have
   an ownership role. This will enable Zenodo integration with your repository for automatic publishing of each
   software release.
-2. **Create a citation.cff file**: Add this file to the root directory of your GitHub repository. This is a plain
+2. **Create a `citation.cff file`**: Add this file to the root directory of your GitHub repository. This is a plain
   text file with human- and machine-readable citation information for your code repository. It includes basic
   metadata such as author, name of the software, brief abstract, organization name, etc. Zenodo will scrape this
   file for specific metadata you want included in your DOI.

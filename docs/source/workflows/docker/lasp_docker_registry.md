@@ -16,8 +16,8 @@ authentication.
 
 ## Accessing the registry
 
-The Web UI for Nexus is located at https://artifacts.pdmz.lasp.colorado.edu. It is not necessary to log into the server
-to search and browse public repositories using the left-hand navigation menu.
+The Web UI for Nexus is located at [https://artifacts.pdmz.lasp.colorado.edu](https://artifacts.pdmz.lasp.colorado.edu).
+It is not necessary to log into the server to search and browse public repositories using the left-hand navigation menu.
 
 > **Warning**: The UI is only accessible from inside the LASP Network.
 
@@ -38,7 +38,7 @@ The LASP Docker registry is organized by Namespaces. This is just a sub-folder o
 images together. Namespaces can be organized by teams or missions. Once a Namespace has been identified, ACLs will be
 created in Nexus that allow only specific WebIAM groups to create or push images to the Registry as well as delete
 images. Images will be referred to in Docker as `<namespace>/<image>:<tag>` or more precisely
-`<registry>/<namespace>/<image>:<tag>`. See [Creating Images](TODO: add link) below for more information.
+`<registry>/<namespace>/<image>:<tag>`. See [Creating an Image](#creating-an-image) below for more information.
 
 ## Browsing images
 
@@ -159,3 +159,14 @@ $ docker logout
 
 Write access and new Namespaces require The Web Team to create WebIAM groups and Nexus ACLs. Please submit a Jira
 WEBSUPPORT ticket or send an email to `web.support@lasp.colorado.edu`
+
+## Acronyms
+
+* **AWS** = Amazon Web Services
+* **CLI** = Command-Line Interface
+* **DMZ** = DeMiliterized Zone
+* **HTTPS** = HypterText Transfer Protocol Secure
+* **UI** = User Interface
+* **URL** = Uniform Resource Locator
+
+*Credit: Content taken from a Confluence guide written by Maxine Hartnett*

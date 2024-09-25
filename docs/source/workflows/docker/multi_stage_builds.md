@@ -9,14 +9,14 @@ This documentation was inspired by the processes of containerizing
 the [Jenkins TIM test suite](https://confluence.lasp.colorado.edu/display/DS/TIM+Containers+Archive), and providing
 multiple ways of running the tests -- both through Intellij, and locally, plut the ability to add additional ways of
 testing if they came up. Additionally, there are a few complications with the ways that [Red Hat VMs run on the Mac M1
-chips](./running_docker_with_m1.md) that was introduced in 2020. All of these requirements led the TIM developers to use
+chips](running_docker_with_m1) that was introduced in 2020. All of these requirements led the TIM developers to use
 something that allows for a lot of flexibility and simplification in one Dockerfile: multi-stage builds and a docker
 compose file. This guideline will go over the general use case of both technologies and the specific use case of using
 them for local TIM tests.
 
 ## Multi-stage Build
 
-### Multi-stage build overview
+### Multi-stage Build Overview
 
 A multi-stage build is a type of Dockerfile which allows you to split up steps into different stages. This is useful if
 you want to have most of the Dockerfile be the same, but have specific ending steps be different for different
@@ -28,7 +28,7 @@ on Mac vs Linux, etc. You can also use multi-stage builds to start from differen
 For additional info on multi-stage builds, you can check out the [Docker
 documentation](https://docs.docker.com/build/building/multi-stage/).
 
-### Creating and using a multi-stage build
+### Creating and Using a Multi-stage Build
 
 Creating a multi-stage build is simple. You can name the first stage, where you build off a base image, using `FROM
 <image name> AS <stage name>`. After that, you can use it to build off of in later steps -- in this case, you can see
@@ -54,7 +54,7 @@ RUN g++ -o /binary source.cpp
 To specify the stage, you can use the `--target <target name>` flag when building from the command line, or `target:
 <target name>` when building from a docker compose file.
 
-### TIM containerization multi-stage builds
+### TIM Containerization Multi-stage Builds
 
 In the TIM test container, multi-stage builds are used to differentiate between running the tests locally in a terminal
 and running the commands through Intellij. In the local terminal, the code is copied in through an external shell
@@ -75,7 +75,7 @@ Jenkins will most likely use the same base target as local testing -- but for pr
 production code into the container, this can be added as a separate target. Multi-stage builds allow us to put all
 these use cases into one Dockerfile, while the docker compose file allows us to simplify using that end file.
 
-## Docker compose
+## Docker Compose
 
 A [docker compose file](https://docs.docker.com/reference/compose-file/) is often used to create a network of different
 docker containers representing different services. However, it is also a handy way of automatically creating volumes,
@@ -83,7 +83,7 @@ secrets, environment variables, and various other aspects of a Docker container.
 the same arguments in your `docker build` or `docker run` commands, that can often be automated into a docker compose
 file.
 
-### Docker compose overview
+### Docker Compose Overview
 
 Using a docker compose file allows you to simplify the commands needed to start and run docker containers. For example,
 let's say you need to run a Docker container using a Dockerfile in a different directory with an attached volume and an
@@ -137,7 +137,7 @@ the docker compose file built.
 Docker compose is a very powerful tool, and everything you can do when building on the command line can also be done in
 docker compose. For more info, you can check out the [docker compose documentation](https://docs.docker.com/compose/).
 
-### TIM `docker-compose.yml` file explained
+### TIM `docker-compose.yml` File Explained
 
 All the Docker functionality can easily be accessed using the docker compose file. Currently, this is set up for only a
 few different use cases, but it can be updated if needed.
@@ -224,6 +224,10 @@ Here is what each piece of the service setting means:
 * `tty: true`: This line allows the created docker container to run in detached mode.
 * `environment`: This can be used to pass environment variables into the docker container. Currently, this is only used
   for the `single_test` service, to set the test that you want to run.
+
+## Useful Links
+* [Official Docker documentation](https://docs.docker.com/)
+* [Multi-stage Builds Documentation](https://docs.docker.com/build/building/multi-stage/)
 
 ## Acronyms
 

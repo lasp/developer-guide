@@ -1,2 +1,1 @@
-all
-rule 'MD013', :line_length => 5000
+style "#{File.dirname(__FILE__)}/.mdl_style.rb"

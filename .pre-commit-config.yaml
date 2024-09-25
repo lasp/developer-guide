@@ -23,5 +23,5 @@ repos:
     rev: 0.35.0
     hooks:
       - id: markdownlint
-        args: ["-c", ".markdownlint.yaml"]
+        args: ["-c", ".mdlrc"]
         files: ^.*\.(md)$

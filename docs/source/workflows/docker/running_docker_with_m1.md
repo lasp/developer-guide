@@ -29,7 +29,7 @@ Red Hat has some [compatibility issues](https://access.redhat.com/discussions/59
 method used for virtualization. This is because (according to the RHEL discussion boards) Red Hat is built for a default
 page size of 64k, while the M1 CPU page size is 16k. One way to fix this is to rebuild for a different page size.
 
-### Short-term solution
+### Short-term Solution
 
 A solution is to use the [`platform` option](https://devblogs.microsoft.com/premier-developer/mixing-windows-and-linux-containers-with-docker-compose/)
 in [docker compose](https://docs.docker.com/compose/). It's an option that allows you to select the platform to build
@@ -62,7 +62,7 @@ The `platform` keyword is also available on `docker build` and `docker run` comm
 `--platform linux/amd64` on `docker build` and `docker run` commands you can force the platform without needing to use
 `docker compose`.
 
-## Docker container hanging on M1
+## Docker Container Hanging on M1
 
 [This is a known issue with Docker](https://github.com/docker/for-mac/issues/5590). Docker has already released some
 patches to try and fix it, but it could still be encountered. Basically, the Docker container will hang permanently

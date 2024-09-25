@@ -15,4 +15,11 @@ Detailed instructions or general guidance for implementation of the guideline
 ## Useful Links
 Helpful links to additional resources on the topic
 
+## Acronyms
+List of acronyms used in the guideline
+
+* **acronym1** = full name
+* **acronym2** = full name
+* **acronym3** = full name
+
 Credit: Content taken from a Confluence guide written by <add_name>

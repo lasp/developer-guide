@@ -35,3 +35,8 @@ source_suffix = {
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+
+# Add the custom CSS file to the list of stylesheets
+def setup(app):
+    app.add_css_file('css/custom.css')

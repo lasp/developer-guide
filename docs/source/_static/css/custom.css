@@ -1,0 +1,10 @@
+/* Increase the width of the content area */
+.wy-nav-content {
+    max-width: none;
+}
+
+/* Center the content */
+.wy-nav-content {
+    margin-left: auto;
+    margin-right: auto;
+}

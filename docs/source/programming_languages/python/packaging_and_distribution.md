@@ -1,33 +1,35 @@
-> **Warning:** More information is needed to complete this guideline.
-
 # Python Packaging and Distribution
+
+> > **Warning:** More information is needed to complete this guideline.
+
 Examples of Python packaging and distribution options and how to use them.
 
 ## Purpose
+
 > **Warning** Need to add an explanation of how this guideline supports DS workflows, meets internal and external
 > policies, and aids in collaboration and our overall success
 
 ## Options
+
 The options for Python packaging and distribution that we often see used at LASP are:
+
 - [PyPI](#packaging-for-pypi--pip-install-)
 - [Conda](#packaging-for-conda--conda-install-)
 
 ## Packaging for PyPI (`pip install`)
 
-### PyPI resources:
+### PyPI resources
 
 - [PyPI Help Page](https://pypi.org/help/)
-
 - [Setting up a PyPI account](https://pypi.org/account/register/)
-
 - [Getting a PyPI access token](https://pypi.org/help/#apitoken)
-
 
 ### Built-In (`build` + `twine`)
 
 > **Warning**: Need to add introductory paragraph that summarizes Built-In
 
 #### How to use Built-In
+
 Python Packaging User Guide: https://packaging.python.org/en/latest/
 The link below is a fairly complete tutorial. There are also instructions there for using various other build tools:
 https://packaging.python.org/en/latest/tutorials/packaging-projects/
@@ -37,10 +39,11 @@ https://packaging.python.org/en/latest/tutorials/packaging-projects/
 - [Python Packaging User Guide](https://packaging.python.org/en/latest/)
 
 #### Setuptools Example – Library Package
+
 <details>
   <summary>setup.py</summary>
 
-```
+```python
 """
 Setup file for the science data processing pipeline.
 
@@ -86,6 +89,7 @@ setup(
     }
 )
 ```
+
 </details>
 
 ### Poetry
@@ -95,7 +99,8 @@ setup(
 [Poetry Build and Publish Docs](https://python-poetry.org/docs/cli/#build)
 
 How to Publish to PyPI from Poetry
-```
+
+```bash
 poetry lock
 poetry install
 poetry version
@@ -110,7 +115,7 @@ poetry publish  # You will be prompted for your PyPI credentials if you don't pr
 <details>
   <summary>pyproject.toml</summary>
 
-  ```
+  ```toml
     # pyproject.toml
     # See: https://python-poetry.org/docs/pyproject/
 
@@ -158,12 +163,15 @@ poetry publish  # You will be prompted for your PyPI credentials if you don't pr
     requires = ["poetry-core>=1.0.0"]
     build-backend = "poetry.core.masonry.api"
   ```
+
 </details>
 
 ## Packaging for Conda (`conda install`)
+
 > **Warning**: Need a volunteer to expand on Conda
 
 ### How to install and use Conda
+
 https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs.html
 
 > Conda Develop:
@@ -172,6 +180,7 @@ conda recommend using `pip install` to install an editable package in developmen
 > See: https://github.com/conda/conda-build/issues/1992
 
 ## Useful Links
+
 Here are some helpful resources:
 
 - [Python Packaging User's Guide](https://packaging.python.org/en/latest/)

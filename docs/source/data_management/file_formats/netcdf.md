@@ -1,4 +1,5 @@
 # NetCDF
+
 >**Warning**
 > This guide needs additional information
 
@@ -9,7 +10,9 @@ directly, without knowing how the data are stored, and metadata information may 
 * Self-describing, includes metadata
 * Multi-dimensional array data model
 
-The [netCDF data model](https://docs.unidata.ucar.edu/netcdf-c/current/netcdf_data_model.html) consists of the following:
+The [netCDF data model](https://docs.unidata.ucar.edu/netcdf-c/current/netcdf_data_model.html) consists of the
+following:
+
 * variable
   * Multi-dimensional array
   * Column-oriented: each variable as a separate entity
@@ -22,13 +25,14 @@ The [netCDF data model](https://docs.unidata.ucar.edu/netcdf-c/current/netcdf_da
   * Akin to directories
   * Avoid unless you really need the complex structure
 
-
 ## Why use NetCDF
+
 NetCDF is a file format commonly used at LASP as it is the "highly preferred" format for NASA Earth Observing System
 Data and Information System data products, per their Data Product Development Guide for Data Producers.
 This affects all NASA Earth Science missions.
 
 NetCDF features:
+
 * Self-describing
   * structure captures coordinate system (functional relationship)
   * includes metadata
@@ -42,14 +46,17 @@ NetCDF features:
 * Open specification (unlike IDL save files)
 
 ## Options available
+
 There are two netCDF data models:
+
 * NetCDF-3 classic
 * NetCDF-4 built on HDF5
   * recommended but prefer classic constructs
 
 ## How to use this data format
 
-#### NetCDF Files
+### NetCDF Files
+
 * Binary format with open specification
 * Requires software libraries to read and write C, Fortran, Java, python, IDL, ...
 * Internal compression, don't bother to compress NetCDF files externally
@@ -58,7 +65,8 @@ There are two netCDF data models:
 * nc file extension
 * Don't be afraid of big files
 
-#### Coordinate System
+### Coordinate System
+
 * Dimensions should be used to define a coordinate system
   * e.g. temporal, spatial, spectral
   * Avoid using dimensions to group data
@@ -72,14 +80,16 @@ There are two netCDF data models:
 * shared dimensions
   * Each variable should reuse dimensions to indicate that they share the same coordinates (domain set)
 
-#### Time as Coordinate Variable
+### Time as Coordinate Variable
+
 * If the data are a function of a single time dimension then there should be a single time variable
   * avoid breaking time up by date and time of day
 * Prefer numeric time units
   * time unit since an epoch
   * e.g. "seconds since 1970-01-01", "microseconds since 1980-01-06"
 
-#### Metadata
+### Metadata
+
 * Optional but useful to make NetCDF file self-describing
 * attribute
   * global (dataset level)
@@ -93,20 +103,22 @@ There are two netCDF data models:
   * [Attribute Convention for Data Discovery (ACDD)](https://wiki.esipfed.org/Attribute_Convention_for_Data_Discovery_1-3)
   * [udunits](https://www.unidata.ucar.edu/software/udunits/): standard units
 
-#### Other useful variable attributes
+### Other useful variable attributes
+
 * _FillValue
   * missing_value is considered deprecated and is not recommended by the NetCDF Users Group.
   * NaN is another option, however, NaNs in files are handled differently in every language and so it may
   be better to pick a value for official data products that many users will be using
 * valid_range, valid_min, valid_max
 * scale_factor, add_offset (packed values)
-* [cell_methods](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#_data_representative_of_cells): standards for representing data cells (bins)
+* [cell_methods](https://cfconventions.org/Data/cf-conventions/cf-conventions-1.8/cf-conventions.html#_data_representative_of_cells)
+  : standards for representing data cells (bins)
   * e.g. daily average, wavelength bins
 
 ## Useful Links
+
 * [NetCDF User's Guide](https://docs.unidata.ucar.edu/nug/current/)
 * [NetCDF ToolsUI](https://docs.unidata.ucar.edu/netcdf-java/current/userguide/toolsui_ref.html)
 * [NetCDF Workshop Materials](https://www.unidata.ucar.edu/software/netcdf/workshops/2011/index.html)
-
 
 Credit: Content taken from a Confluence guide written by Doug Lindholm

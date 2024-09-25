@@ -12,11 +12,12 @@ maintenance of the guidelines.
 ## Motivation
 
 The motivation for this effort is two-fold:
- - We are motivated by [Goal 3.1](https://confluence.lasp.colorado.edu/display/DS/2024-2027+Data+Systems+Strategic+Plan#id-20242027DataSystemsStrategicPlan-goal3)
-from the 2024-2027 Data Systems Strategic Plan, which states "Create a set of living DS best practices and training
-guides that include standard processes and expectations for common tasks".
- - With the push towards open science and access (see [NASA’s directive SPD-41a](https://science.nasa.gov/researchers/open-science/science-information-policy/))
-we hope to also embody this openness in our internal processes.
+
+* We are motivated by [Goal 3.1](https://confluence.lasp.colorado.edu/display/DS/2024-2027+Data+Systems+Strategic+Plan#id-20242027DataSystemsStrategicPlan-goal3)
+  from the 2024-2027 Data Systems Strategic Plan, which states "Create a set of living DS best practices and training
+  guides that include standard processes and expectations for common tasks".
+* With the push towards open science and access (see [NASA’s directive SPD-41a](https://science.nasa.gov/researchers/open-science/science-information-policy/))
+  we hope to also embody this openness in our internal processes.
 
 Historically, such documentation has been spread over multiple pages and spaces within confluence and specific projects.
 The developer guide endeavors to bring these resources together in one centralized space, allowing for collaboration
@@ -46,6 +47,7 @@ context of my work in Data Systems?"
 ## Contributing
 
 If you would like to contribute changes to the content of this repository, do the following:
+
 1. Create a fork of this repository
 2. Make a local clone of your fork:
 
@@ -74,6 +76,7 @@ git remote add upstream https://github.com/lasp/developer-guide.git  # For HTTPS
 10. Iterate with the reviewer over any needed changes until the reviewer approves of the pull request. This may require
     additional commits to the pull request. Once all changes are approved, merge the pull request.
 
+<!-- markdownlint-disable-next-line MD026 -->
 ## Questions?
 
 Any questions about this effort may be directed to the ``#ds-best-practices-documentation`` Slack channel.

@@ -20,6 +20,7 @@ Detailed instructions or general guidance for implementation of the guideline
 Helpful links to additional resources on the topic
 
 ## Acronyms
+
 List of acronyms used in the guideline
 
 * **acronym1** = full name

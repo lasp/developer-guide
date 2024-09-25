@@ -19,8 +19,9 @@ repos:
     hooks:
       - id: codespell
         files: ^.*\.(md|rst|yml)$
-  - repo: https://github.com/markdownlint/markdownlint
-    rev: v0.11.0
+  - repo: https://github.com/DavidAnson/markdownlint
+    rev: 0.35.0
     hooks:
       - id: markdownlint
+        args: ["-c", ".markdownlint.yaml"]
         files: ^.*\.(md)$

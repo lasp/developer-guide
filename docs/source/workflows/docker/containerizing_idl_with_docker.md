@@ -6,19 +6,19 @@ This document provides a preliminary implementation of IDL in a Docker container
 
 ## A Few Things to Note
 
-- Although the implementation described below is only valid for IDL version 8.6 and greater, the Dockerfile could
+* Although the implementation described below is only valid for IDL version 8.6 and greater, the Dockerfile could
   presumably be modified to accommodate older versions. The difference is that the network license access is different
   for IDL 8.5 and earlier versions.
-- This is not the same as Docker containers that access an external IDL on the host machine or via a network connection.
-- The IDL image size is approximately 3GB, which is reasonable for an IDL installation (see
+* This is not the same as Docker containers that access an external IDL on the host machine or via a network connection.
+* The IDL image size is approximately 3GB, which is reasonable for an IDL installation (see
   https://www.l3harrisgeospatial.com/docs/PlatformSupportTable.html). The base CentOS 8 image is only 210MB, so the IDL
   installation accounts for more than 90% of the image.
-- The IDLDE image size is approximately 3.5GB because a web browser (Firefox) has to be installed to export the display.
-- For a simple container deployment, there is no Docker Compose file. The container is easily generated with simple
+* The IDLDE image size is approximately 3.5GB because a web browser (Firefox) has to be installed to export the display.
+* For a simple container deployment, there is no Docker Compose file. The container is easily generated with simple
   command-line arguments.
-- Provided that the host machine has LASP VPN access (for licensing purposes), the containerized IDL should work
+* Provided that the host machine has LASP VPN access (for licensing purposes), the containerized IDL should work
   directly "out of the box" (i.e., no manual post-container creation steps are required).
-- Although both the IDL and IDLDE images can be built locally using the Dockerfiles below, they are also available from
+* Although both the IDL and IDLDE images can be built locally using the Dockerfiles below, they are also available from
   the [LASP Image Registry](lasp_docker_registry).
 
 ## Dockerfile
@@ -75,11 +75,11 @@ installation. **The remainder of this guideline describes the implementation of 
 
 The following issues are associated with using IDL in a stand-alone container:
 
-- Cross-container access
-- File sharing between containers
-- Access from a Jenkins service
-- Integration of git
-- Integration of `mgunit`
+* Cross-container access
+* File sharing between containers
+* Access from a Jenkins service
+* Integration of git
+* Integration of `mgunit`
 
 ## Build the Image
 
@@ -138,7 +138,7 @@ command.
 The following demonstrates how to utilize IDL by directly interacting with a running container. In this example, the
 (optional) container name is `idl_container` and the name of the (previously created) image is `idl_image`:
 
-```
+```bash
 (base) MacL3947:idl stmu4541$ docker container run -it --name=idl_container idl_image
 IDL 8.7.3 (linux x86_64 m64).
 (c) 2020, Harris Geospatial Solutions, Inc.
@@ -322,7 +322,6 @@ Note that a Dockerfile is not required for this simple example since the contain
 Jenkins image (`jenkins/jenkins:lts-centos`). A Dockerfile is required only when it is necessary to install additional
 tools, such as Ant, Gradle, various compilers, etc.
 
-
 ## Run a Containerized IDLDE and Export the Display to the Host Machine
 
 Also, see [Export Display from Docker Container - Proof of Concept Confluence
@@ -331,12 +330,12 @@ general discussion of exporting a display from a Docker container.
 
 The following steps are necessary to run a containerized IDLDE and export the display to the host machine:
 
-1) A web browser must be installed in the container (or, ideally, as below, the image from which the container is
+1. A web browser must be installed in the container (or, ideally, as below, the image from which the container is
    generated).
-2) A very short IDLDE Dockerfile is necessary to add a web browser to the IDL Image. This will create a new IDLDE image.
-3) Source the `idl_setup` script during image creation.
-4) The IDLDE container must be run with the `DISPLAY` environment parameter set to that of the host machine.
-5) For Linux, the IDLDE container must be run with the host machine X socket bind mounted to the container.
+2. A very short IDLDE Dockerfile is necessary to add a web browser to the IDL Image. This will create a new IDLDE image.
+3. Source the `idl_setup` script during image creation.
+4. The IDLDE container must be run with the `DISPLAY` environment parameter set to that of the host machine.
+5. For Linux, the IDLDE container must be run with the host machine X socket bind mounted to the container.
 
 Create a very short IDLDE Dockerfile that sources the IDL setup script and adds a Firefox web browser to the base IDL
 image. Note that the base image (named `idl_image` in the following Dockerfile) must exist before this Dockerfile can be
@@ -405,6 +404,7 @@ docker container run -e DISPLAY=host.docker.internal:0 idlde_image
 ```
 
 ## Useful Links
+
 * [Official Docker documentation](https://docs.docker.com/)
 
 ## Acronyms

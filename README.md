@@ -35,6 +35,7 @@ git remote add upstream https://github.com/lasp/developer-guide.git  # For HTTPS
 10. Iterate with the reviewer over any needed changes until the reviewer approves of the pull request. This may require
     additional commits to the pull request. Once all changes are approved, merge the pull request.
 
+<!-- markdownlint-disable-next-line MD026 -->
 ## Questions?
 
 Any questions about this effort may be directed to the ``#ds-best-practices-documentation`` Slack channel.

@@ -6,7 +6,7 @@ This guide is intended to provide an overview of what Docker is, how it's used, 
 containers. It will not go in depth on creating a Docker image, or on the more nuanced aspects of using Docker. For a
 more in-depth introduction, you can read through the official Docker docs.
 
-## A Beginner's Guide to Docker
+## Overview
 
 Docker is a tool for containerizing code. You can basically think of it as a lightweight virtual machine. Docker works
 by defining an image which includes whatever you need to run your code. You start with a base image, which is a pre-made
@@ -47,7 +47,6 @@ share already-built docker images. LASP has a private repository, in the form of
 So, you define a Docker *image* using a *Dockerfile* and/or a *Docker Compose* file. Running this image produces a
 Docker *container*, which runs your code and environment. An image can be pushed up to a *registry*, where anyone with
 access can pull the image and run the container themselves without needing access to the Dockerfile.
-
 
 ## Getting Started
 
@@ -94,7 +93,7 @@ rebuild, and you can find a full list of flags [here](https://docs.docker.com/re
 Now that we have built the image, we can see all the Docker images that are built on our system by running the
 `docker images` command:
 
-```
+```plaintext
 $ docker images
 REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
 docker_tutorial                  latest    71736be7c555   5 minutes ago   91.9MB
@@ -176,6 +175,7 @@ docker image prune
 ```
 
 ## Useful Links
+
 * [Official Docker documentation](https://docs.docker.com/)
 * [Installing Docker engine](https://docs.docker.com/engine/install/)
 * [Installing Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/)

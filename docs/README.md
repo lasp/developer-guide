@@ -1,4 +1,4 @@
-## How to build the documentation
+# How to build the documentation
 
 ```bash
 # Make the html documentation

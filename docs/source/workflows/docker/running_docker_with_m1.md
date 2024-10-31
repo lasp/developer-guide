@@ -73,7 +73,6 @@ Docker programs.
 The best way to fix it is to go to the Docker Desktop Dashboard > Settings > Resources and change the number of CPUs
 down to 1. This will obviously impact performance in other ways, but may help avoid encountering this permanent hang.
 
-
 ## Acronyms
 
 * **amd64** = 64-bit Advanced Micro Devices

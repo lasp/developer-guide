@@ -226,6 +226,7 @@ Here is what each piece of the service setting means:
   for the `single_test` service, to set the test that you want to run.
 
 ## Useful Links
+
 * [Official Docker documentation](https://docs.docker.com/)
 * [Multi-stage Builds Documentation](https://docs.docker.com/build/building/multi-stage/)
 

@@ -110,7 +110,6 @@ $ docker logout
 
 > **Info**: Don't forget to delete your local images if you no longer need them.
 
-
 ### Automated
 
 To script the process of creating an image, you can use something like Ansible with its
@@ -132,11 +131,10 @@ and clicking "Delete Folder":
 
 ![Delete an image](../../_static/lasp_docker_registry_delete_image2.png)
 
-
 ## Pulling an Image
 
 1. Login to the remote registry using your username/password. Note that this is only necessary if you are accessing a
-docker image that is NOT in a public namespace:
+   docker image that is NOT in a public namespace:
 
 ```bash
 $ docker login docker-registry.pdmz.lasp.colorado.edu

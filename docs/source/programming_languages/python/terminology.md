@@ -3,6 +3,7 @@
 Some Python terminology that a user might encounter, particularly when working through this Python guide.
 
 ## Purpose
+
 Like all programming languages, Python has some terminology that is unique to it and it is helpful to have that language
 explained. This page may be updated over time so that it holds the most useful terminology to those that use this
 developer's guide.
@@ -35,6 +36,7 @@ boasts a similar dependency resolver to Conda. One major drawback to Conda in pa
 and over instead of simply making code changes in place.
 
 ## Useful Links
+
 Helpful links to additional resources on the topic
 
 Credit: Content taken from a Confluence guide written by Gavin Medley

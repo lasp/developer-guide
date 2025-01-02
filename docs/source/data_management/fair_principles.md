@@ -51,8 +51,6 @@ automatic discovery of datasets and services.
 - Data are described by rich metadata that clearly includes the identifier of the data they describe.
 - Data and metadata are registered or indexed in a searchable resource.
 
----
-
 ### **Accessible**
 
 Once the user finds the required data, they need to know how to access them, including details about authentication and authorization.
@@ -64,8 +62,6 @@ Once the user finds the required data, they need to know how to access them, inc
 - Authentication and authorization procedures are applied where necessary.
 - Metadata remain accessible even when data are no longer available.
 
----
-
 ### **Interoperable**
 
 Data usually need to be integrated with other data. Additionally, data must
@@ -76,8 +72,6 @@ interoperate with applications or workflows for analysis, storage, and processin
 - Use a formal, accessible, broadly applicable language for knowledge representation.
 - Use vocabularies that follow FAIR principles.
 - Include qualified references to other data and metadata.
-
----
 
 ### **Reusable**
 
@@ -112,11 +106,15 @@ must be well-described to enable replication and/or combination in different set
 5. **Collaborate with FAIR Partners**:
   - Follow practices adopted by FORCE11, COPDESS, and similar organizations.
 
+---
+
 ## Useful Links
 
+- [Metadata Overview](metadata.md)
 - [COPDESS FAIR Data Project](https://copdess.org/enabling-fair-data-project/)
 - [Statement of Commitment to FAIR Data](https://copdess.org/statement-of-commitment/)
 - [GO FAIR Principles](https://www.go-fair.org/fair-principles/)
+- [FORCE11](https://www.force11.org/about)
 
 ## Acronyms
 

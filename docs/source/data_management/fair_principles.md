@@ -41,7 +41,7 @@ adopted from [GO FAIR](https://www.go-fair.org/fair-principles/).
 
 ### **Findable**
 
-The first step in (re)using data is to find them. Metadata and data should be easy
+The first step in (re)using data is to find them. [Metadata](metadata.md) and data should be easy
 to find for both humans and computers. Machine-readable metadata are essential for
 automatic discovery of datasets and services.
 

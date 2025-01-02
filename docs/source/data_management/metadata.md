@@ -82,8 +82,8 @@ LASP is developing the **LASP Extended Metadata Repository (LEMR)** to store and
 
 Metadata formats refer to schemas describing the metadata structure. Examples include:
 
-- **ISO 19115**: Geographic information and services.
-- **SPASE**: Used in Heliophysics.
+- **[ISO 19115](https://www.fgdc.gov/metadata/iso-standards)**: Geographic information and services.
+- **[SPASE](https://spdf.gsfc.nasa.gov/spdf-documents/SPASE_and_SPDF.html)**: Used in Heliophysics.
 
 At LASP, the **laspds schema** is used for applications serving data, with plans to
 integrate with standard schemas like SPASE and ISO 19115.

@@ -4,7 +4,7 @@ The FAIR Principles are a *"set of standards that connects researchers, publishe
 and data repositories in Earth, space, and environmental sciences to ... accelerate
 scientific discovery and enhance the integrity, transparency, and reproducibility of
 scientific data on a large scale"* ([COPDESS](https://copdess.org/enabling-fair-data-project/)).
-Essentially, scientific data should be **Findable, Accessible, Interoperable, and Reusable**
+Essentially, scientific data should be **Findable, Accessible, Interoperable, and Reusable.**
 
 ## Why FAIR Principles Matter
 

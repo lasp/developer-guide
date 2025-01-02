@@ -57,7 +57,7 @@ The best practices for metadata storage include:
 
 1. **Machine-readable metadata** consumable by common tools
 2. **Publicly accessible metadata** readable by humans.
-3. Avoid private, inaccessible formats like personal notebooks or sticky notes.
+3. **Avoid private, inaccessible formats** like personal notebooks or sticky notes.
 
 #### Examples of Metadata Storage
 

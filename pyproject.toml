@@ -9,6 +9,7 @@ description = "Guidelines for software developers at LASP"
 authors = [
     "Matthew Bourque <Matthew.Bourque@lasp.colorado.edu>",
     "Keira Brooks <Keira.Brooks@lasp.colorado.edu>",
+    "Luke Charbonneau <Luke.Charbonneau@lasp.colorado.edu>",
     "Veronica Martinez <Veronica.Martinez@lasp.colorado.edu>",
     "Alex Ware <Alex.Ware@lasp.colorado.edu>"]
 readme = "README.md"

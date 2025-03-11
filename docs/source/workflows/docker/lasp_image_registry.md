@@ -78,7 +78,10 @@ docker pull docker-registry.pdmz.lasp.colorado.edu/tsis/dsinteg2_migration
 Or, the following command:
 
 ```bash
-docker container run --user root --rm -it --name timDevContainer docker-registry.pdmz.lasp.colorado.edu/tsis/dsinteg2_migration bash
+docker container run --user root --rm -it \
+  --name timDevContainer \
+  docker-registry.pdmz.lasp.colorado.edu/tsis/dsinteg2_migration \
+  bash
 ```
 
 This will launch a container based on the registry `dsinteg2_migration` image and connect to that container with a

@@ -36,16 +36,10 @@ sharing nationally and internationally.
 
 ### Enabling a Science Ecosystem
 
-Scientific data is growing in complexity and scale. To support effective research, data
-must be:
-
-- Documented
-- Accessible
-- Usable
-
-Interoperable tools, standards, and conventions simplify and automate data processing,
-analysis, and metadata collection. Scientific artifacts should be [preserved as a world heritage](https://www.agu.org/share-and-advocate/share/policymakers/position-statements/position_data)
-with longevity in mind. See relevant guide on [FAIR principles](fair_principles.md).
+Scientific artifacts should be [preserved as a lasting world heritage](https://www.agu.org/share-and-advocate/share/policymakers/position-statements/position_data).
+As scientific data grows in complexity and scale, interoperable tools, standards, and conventions play a crucial role
+in simplifying and automating data processing, analysis, and metadata collection. Data that is
+[FAIR](fair_principles.md)—findable, accessible, interoperable, and reusable—is essential to supporting these efforts.
 
 ### Reproducibility
 

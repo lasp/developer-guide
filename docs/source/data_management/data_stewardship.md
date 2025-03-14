@@ -44,9 +44,8 @@ must be:
 - Usable
 
 Interoperable tools, standards, and conventions simplify and automate data processing,
-analysis, and metadata collection. Scientific artifacts should be preserved with longevity
-in mind. *"Artifacts must be prepared for an existence rivaling civilization's most precious
-and enduring physical structures."* [(AGU Position Statement)](https://www.agu.org/Share-and-Advocate/Share/policymakers/position-statements-member-review)
+analysis, and metadata collection. Scientific artifacts should be [preserved as a world heritage](https://www.agu.org/share-and-advocate/share/policymakers/position-statements/position_data)
+with longevity in mind. See relevant guide on [FAIR principles](fair_principles.md).
 
 ### Reproducibility
 
@@ -129,7 +128,8 @@ for operational digital products stewarded by national data centers.
 
 ## Useful Links
 
-- [AGU Position Statement on Scientific Data](https://www.agu.org/Share-and-Advocate/Share/policymakers/position-statements-member-review)
+- [FAIR Principles](fair_principles.md)
+- [AGU Position Statement on Data](https://www.agu.org/share-and-advocate/share/policymakers/position-statements/position_data)
 - [Improving Reproducibility in Earth Science Research](https://eos.org/opinions/improving-reproducibility-in-earth-science-research)
 - [FORCE11 on Digital Publishing](https://www.force11.org/about)
 - [Software Sustainability Institute](https://www.software.ac.uk/)
@@ -141,6 +141,7 @@ for operational digital products stewarded by national data centers.
 - **DMP** = Data Management Plan
 - **ESDSWG** = Earth Science Data Systems Working Group
 - **ESIP** = Earth Science Information Partners
+- **FAIR** = Findable, Accessible, Interoperable, and Reusable
 - **FORCE11** = Future of Research Communication and e-Scholarship
 - **NASA** = National Aeronautics and Space Administration
 - **NOAA** = National Oceanic and Atmospheric Administration

@@ -20,6 +20,9 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 
+[tool.poetry]
+package-mode = false
+
 [tool.poetry.dependencies]
 myst-parser = "^3.0.1"
 python = ">=3.9,<4"

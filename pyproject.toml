@@ -2,7 +2,7 @@
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry]
+[project]
 name = "developer-guide"
 version = "0.1.0"
 description = "Guidelines for software developers at LASP"

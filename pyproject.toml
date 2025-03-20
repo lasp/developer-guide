@@ -2,15 +2,15 @@
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry]
+[project]
 name = "developer-guide"
 version = "0.1.0"
 description = "Guidelines for software developers at LASP"
 authors = [
-    "Matthew Bourque <Matthew.Bourque@lasp.colorado.edu>",
-    "Keira Brooks <Keira.Brooks@lasp.colorado.edu>",
-    "Veronica Martinez <Veronica.Martinez@lasp.colorado.edu>",
-    "Alex Ware <Alex.Ware@lasp.colorado.edu>"]
+    {name = "Matthew Bourque", email = "Matthew.Bourque@lasp.colorado.edu>"},
+    {name = "Keira Brooks", email = "Keira.Brooks@lasp.colorado.edu>"},
+    {name = "Veronica Martinez", email = "Veronica.Martinez@lasp.colorado.edu>"},
+    {name = "Alex Ware", email = "Alex.Ware@lasp.colorado.edu>"}]
 readme = "README.md"
 license = "MIT"
 keywords = ["LASP", "Developer Guide", "Software"]
@@ -19,6 +19,9 @@ classifiers = [
     "Topic :: Software Development",
     "Topic :: Scientific/Engineering",
 ]
+
+[tool.poetry]
+package-mode = false
 
 [tool.poetry.dependencies]
 myst-parser = "^3.0.1"

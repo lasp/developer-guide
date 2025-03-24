@@ -1,5 +1,7 @@
 # Java Terminology
 
+> > **Warning:** More information is needed to complete this guideline.
+
 Some Java terminology that a user might encounter, particularly when working through this Java guide.
 
 ## Purpose

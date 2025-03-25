@@ -31,6 +31,5 @@ other required resources into a single file for distribution of a Java program.
 
 ## Useful Links
 
-Getting started with Java: [https://dev.java/learn/getting-started/](https://dev.java/learn/getting-started/)
-
-Java tutorials: [https://dev.java/learn/](https://dev.java/learn/)
+* [Getting started with Java](https://dev.java/learn/getting-started/)
+* [Java tutorials](https://dev.java/learn/)

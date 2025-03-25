@@ -5,3 +5,4 @@ Programming Languages
    :maxdepth: 1
 
    python/index
+   java/index

@@ -70,9 +70,9 @@ to your [ITGC](/pages/viewpage.action?pageId=139193455) representatives.
 
 ## References
 
-* [LASP Statement on the Use of Generative AI Tools 2023-05-16](file:///spaces/LASPHOME/pages/135094754/LASP+Statement+on+the+Use+of+Generative+AI+Tools)
+* LASP Statement on the Use of Generative AI Tools 2023-05-16 (Confluence)
 * [CU Guidance on AI Tool Use](https://www.cu.edu/service-desk/how-guides/guidance-artificial-intelligence-tools-use)
-* [NASA Guidance to All NASA Employees 2023-05-22](file:///spaces/LASPHOME/pages/135094750/Message+to+All+NASA+Employees+from+the+NASA+Chief+Information+Officer)
+* NASA Guidance to All NASA Employees 2023-05-22 (Confluence)
 * [NASA JPL Guidance on Authorship and AI](https://jpl-nasa.libguides.com/blog/Authorship-and-AI-Tools)
 * [NASA FAQ on use of LLMs like ChatGPT](https://science.nasa.gov/researchers/sara/faqs/#faq-32)
 * [Using Generative AI for Scientific Research (a guide from the University of Michigan)](https://midas.umich.edu/generative-ai-user-guide/)

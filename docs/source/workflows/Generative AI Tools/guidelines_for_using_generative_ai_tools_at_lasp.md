@@ -2,8 +2,7 @@
 
 ## Purpose for this guideline
 
-This guide is intended to provide LASP-specific information, guidance, and requirements for the use of generative AI
-tools at LASP.
+This guideline is intended to provide information for the use of generative AI tools at LASP.
 
 ## Overview
 

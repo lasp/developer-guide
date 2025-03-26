@@ -56,16 +56,16 @@ to your [ITGC](/pages/viewpage.action?pageId=139193455) representatives.
 
 ## Terminology
 
-| **Term**                                         | **Definition**                                                                                                                                                                     |
-| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AI                                               | Artificial Intelligence                                                                                                                                                            |
-| LLM                                              | "Large Language Model," a text-based generative AI system designed to understand and generate human-like language.                                                                 |
-| GPT                                              | "Generative Pre-trained Transformer," the foundational technology that powers large language models designed to generate text that mimics human writing.                           |
-| Generative AI                                    | AI that can generate new content after learning from large datasets.                                                                                                               |
-| Permissive Image Models                          | Generative AI models that are specifically designed or configured to allow for broader use without strict copyright or usage restrictions.                                         |
-| PII (Personally Identifiable Information)        | Information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context.                        |
-| EAR (Export Administration Regulations)          | United States regulations that govern the export and re-export of items for national security, foreign policy, and nonproliferation reasons.                                       |
-| ITAR (International Traffic in Arms Regulations) | U.S. regulations that control the export and import of defense-related articles and services on the United States Munitions List.                                                  |
+| **Term**                                         | **Definition**                                                                                                                                                                |
+| ------------------------------------------------ |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AI                                               | Artificial Intelligence                                                                                                                                                       |
+| LLM                                              | "Large Language Model," a text-based generative AI system designed to understand and generate human-like language.                                                            |
+| GPT                                              | "Generative Pre-trained Transformer," the foundational technology that powers large language models designed to generate text that mimics human writing.                      |
+| Generative AI                                    | AI that can generate new content after learning from large datasets.                                                                                                          |
+| Permissive Image Models                          | Generative AI models that are specifically designed or configured to allow for broader use without strict copyright or usage restrictions.                                    |
+| PII (Personally Identifiable Information)        | Information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context.                   |
+| EAR (Export Administration Regulations)          | United States regulations that govern the export and re-export of items for national security, foreign policy, and nonproliferation reasons.                                  |
+| ITAR (International Traffic in Arms Regulations) | U.S. regulations that control the export and import of defense-related articles and services on the United States Munitions List.                                             |
 | CUI (Controlled Unclassified Information)        | Information that requires safeguarding or dissemination controls pursuant to and consistent with law, regulations, and government-wide policies, excluding classified information. |
 
 ## References

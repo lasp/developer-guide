@@ -575,7 +575,7 @@ Packages can be structured in various ways but some general practices have emerg
 
 From the repo root directory:
 
-```python
+```text
 .
 ├── CHANGES.md                                                            # Changes log, e.g. between versions
 ├── LICENSE.txt                                                           # License file

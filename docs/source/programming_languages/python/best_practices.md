@@ -8,6 +8,8 @@ This document is intended to provide a guide for LASP Python developers. In part
 are intended to be shared at LASP will adhere to these conventions. We recognize that individual projects may need to
 violate some of these principles but we strive to keep them general enough that few exceptions will be made.
 
+---
+
 ## General
 
 ### Values
@@ -27,6 +29,8 @@ violate some of these principles but we strive to keep them general enough that 
 - "Now is better than never." - [PEP 20](https://peps.python.org/pep-0020/)
 - Test ruthlessly. Write docs for new features.
 - Even more important that Test-Driven Development--Human-Driven Development
+
+---
 
 ## Style
 
@@ -235,6 +239,8 @@ wiki = (
 )
 ```
 
+---
+
 ## Anti-Patterns
 
 These are not limited to a language, or even to the software itself. They may manifest during the planning process,
@@ -287,6 +293,8 @@ Named for a parameter that tramps from function to function in the code base, th
 more of a code smell that indicates poor design decisions. It occurs when a parameter is passed several levels deep
 into the stack without being used by the intermediate functions. Often it is used as a (better) alternative to a global
 variable but it indicates that there is a poor division of responsibility in the codebase.
+
+---
 
 ## Testing
 
@@ -349,6 +357,8 @@ class TestAUser(unittest.TestCase):
 ```
 
 Notice how the testcase and test method read together like "Test A User can write a blog post".
+
+---
 
 ## Exception Handling
 
@@ -525,6 +535,8 @@ finally:
     clean_up_db_connections()
     flush_logs_to_log_server()
 ```
+
+---
 
 ## Packaging and Distribution
 
@@ -796,6 +808,8 @@ Versioning can be managed in many ways as long as it is kept PEP
 suggested way is to use a library such as setuptools_scm, which introspects the local git repo and finds the latest tag
 from which to create a version identifier. During the build process, that version is injected into the metadata for the
 package and optionally also written to a version.py file so it remains accessible to the library internally.
+
+---
 
 ## Credit
 

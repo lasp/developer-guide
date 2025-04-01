@@ -43,7 +43,7 @@ violate some of these principles but we strive to keep them general enough that 
 - Constants
   - ALL_CAPS_WITH_UNDERSCORES
 
-#### General Naming Guidelines
+#### Naming Guidelines
 
 ##### Avoid one-letter variables (esp. l, O, I)
 
@@ -93,6 +93,8 @@ elements = ...
 active_elements = ...
 defunct_elements ...
 ```
+
+#### Other Guidelines
 
 ##### Avoid getter and setter methods
 

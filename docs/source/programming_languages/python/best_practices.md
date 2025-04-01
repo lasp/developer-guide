@@ -811,6 +811,18 @@ package and optionally also written to a version.py file so it remains accessibl
 
 ---
 
+## Useful Links
+
+[PEP 8 (Python's Official Style Guide)](https://peps.python.org/pep-0008/)
+
+---
+
+## Acronyms
+
+- **PEP** = Python Enhancement Proposals
+
+---
+
 ## Credit
 
 Content taken from a Confluence guide written by Gavin Medley

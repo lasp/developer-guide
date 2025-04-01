@@ -15,16 +15,16 @@ violate some of these principles but we strive to keep them general enough that 
 - "Build tools for others that you want to be built for you." - Kenneth Reitz
 - "Simplicity is always better than functionality." - Pieter Hintjens
 - "Fit the 90% use-case. Ignore the nay sayers." - Kenneth Reitz
-- "Beautiful is better than ugly." - PEP 20
+- "Beautiful is better than ugly." - [PEP 20](https://peps.python.org/pep-0020/)
 - Build for open source (even for closed source projects)
 
 ### Guidelines
 
-- "Explicit is better than implicit" - PEP 20
-- "Readability counts." - PEP 20
+- "Explicit is better than implicit" - [PEP 20](https://peps.python.org/pep-0020/)
+- "Readability counts." - [PEP 20](https://peps.python.org/pep-0020/)
 - "Anybody can fix anything." - Khan Academy Development Docs
 - Fix each broken window (bad design, wrong decision, or poor code) as soon as it is discovered.
-- "Now is better than never." - PEP 20
+- "Now is better than never." - [PEP 20](https://peps.python.org/pep-0020/)
 - Test ruthlessly. Write docs for new features.
 - Even more important that Test-Driven Development--Human-Driven Development
 
@@ -172,7 +172,8 @@ Rationale: Makes it clear where each module is coming from.
 
 ##### Documentation
 
-Follow PEP 257's docstring guidelines. reStructured Text and Sphinx can help to enforce these standards.
+Follow [PEP 257's](https://peps.python.org/pep-0257/) docstring guidelines. reStructured Text and Sphinx can help to
+enforce these standards.
 Use one-line docstrings for obvious functions:
 
 ```python

@@ -1,5 +1,5 @@
 Generative AI Tools
-======
+===================
 
 .. toctree::
     :maxdepth: 1

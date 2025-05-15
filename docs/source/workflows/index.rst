@@ -6,4 +6,5 @@ Workflows
 
     docker/index
     open_source/index
+    generative_ai_tools/index
 

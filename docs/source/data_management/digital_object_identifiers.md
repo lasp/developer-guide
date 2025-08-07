@@ -83,7 +83,7 @@ repository that allows researchers to deposit datasets,
 research software, reports, and any other research-related
 digital artifacts.  Zenodo assigns DOIs to the deposited
 content, making it citable and discoverable.
-See [citing software](../../workflows/citing_software.md)
+See [citing software](../workflows/open_source/citing_software.md)
 for more on using Zenodo to cite software.
 
 [ORCiDs](https://orcid.org/) are like DOIs but provide

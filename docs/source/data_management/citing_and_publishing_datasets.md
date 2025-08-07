@@ -66,4 +66,4 @@ There are several options for publishing datasets:
 - **ORCID** = Open Researcher and Contributor ID
 - **ESIP** = Earth Science Information Partners
 
-Credit: Content taken from a Confluence guide written by Ann Wilson and Shawn Polson.
+Credit: Content taken from a Confluence guide written by Anne Wilson and Shawn Polson.

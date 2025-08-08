@@ -36,4 +36,4 @@ homepage = "https://github.com/lasp/"
 repository = "https://github.com/lasp/developer-guide"
 
 [tool.codespell]
-ignore-words-list = "nd"
+ignore-words-list = "nd, SORCE"

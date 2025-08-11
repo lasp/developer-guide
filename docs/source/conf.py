@@ -8,7 +8,7 @@
 
 project = 'developer-guide'
 copyright = '2024, Regents of the University of Colorado'
-author = 'Matthew Bourque, Keira Brooks, Veronica Martinez, Alex Ware'
+author = 'Matthew Bourque, Keira Brooks, Luke Charbonneau, Matthew Maclay, Veronica Martinez, Alex Ware'
 release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------

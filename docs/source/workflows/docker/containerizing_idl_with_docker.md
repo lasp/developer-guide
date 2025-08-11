@@ -169,7 +169,11 @@ running on the host machine from within the non-IDL container.
  In this example a container is created from the official `CentOS` image:
 
 ```bash
-docker container run -it --name=centos_container --rm -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker centos bash
+docker container run -it \
+  --name=centos_container --rm \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /usr/bin/docker:/usr/bin/docker \
+  centos bash
 ```
 
 This `docker container run` command generates a CentOS container and initiates an interactive connection to that
@@ -240,7 +244,12 @@ Now, as in the previous example, spin up a non-IDL container based on the offici
 additional bind mount for the newly-created data volume:
 
 ```bash
-docker container run --rm -it --name=centos_container -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v SharedData:/src centos bash
+docker container run --rm -it \
+  --name=centos_container \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /usr/bin/docker:/usr/bin/docker \
+  -v SharedData:/src \
+  centos bash
 ```
 
 #### In the Interactive Shell Inside the `CentOS` Container
@@ -296,7 +305,12 @@ mounted to the `/src` directory in the container.
 Now create the non-IDL container named `centos_container`:
 
 ```bash
-docker container run --rm -it --name=centos_container -v /Users/stmu4541/projects/docker/src:/src -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker lentos bash
+docker container run --rm -it \
+  --name=centos_container \
+  -v /Users/stmu4541/projects/docker/src:/src \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /usr/bin/docker:/usr/bin/docker \
+  lentos bash
 ```
 
 Here, `lentos`, which immediately precedes the bash command specifies the official `centos` image.
@@ -315,7 +329,12 @@ Using a Jenkins-based principal container is not significantly different than th
 latest `CentOS` OS.
 
 ```bash
-docker container run --name=jenkins -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -p 8080:8080 jenkins/jenkins:lts-centos
+docker container run \
+  --name=jenkins \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /usr/bin/docker:/usr/bin/docker \
+  -p 8080:8080 \
+  jenkins/jenkins:lts-centos
 ```
 
 Note that a Dockerfile is not required for this simple example since the container is created from the official `CentOS`

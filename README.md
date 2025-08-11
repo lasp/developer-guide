@@ -9,7 +9,7 @@ developer guide homepage here: http://lasp-developer-guide.readthedocs.io/.
 ### Markdown
 
 This project uses the Markdown language as the source code for all documentation.
-[This Markdown Guide](markdownguide.org) is a good resource for learning/troubleshooting Markdown syntax (google,
+[This Markdown Guide](https://markdownguide.org) is a good resource for learning/troubleshooting Markdown syntax (google,
 StackOverflow, and ChatGPT are also useful for this). Additionally, new contributors are encouraged to look through the
 existing documents for examples on how to use Markdown and how to contribute with consistent formatting.
 
@@ -39,9 +39,10 @@ contributing:
 
 ### Template
 
-Please refer to the [guideline template] markdown file as a template for new guidelines. This template
-should be considered as guidance, and not a hard rule -- sections may be removed, added, or edited based
-on the contributor's discretion and what makes sense for the topic.
+Please refer to the
+[guideline template](https://github.com/lasp/developer-guide/blob/main/guideline_template.md) markdown file as a
+template for new guidelines. This template should be considered as guidance, and not a hard rule -- sections may be
+removed, added, or edited based on the contributor's discretion and what makes sense for the topic.
 
 ### How to view the documentation as it appears on ReadTheDocs
 
@@ -51,7 +52,7 @@ docs locally and view them in a local browser:
 ```bash
 cd docs/
 make clean && make html
-open docs/build/html/index.html
+open build/html/index.html
 ```
 
 ### git Workflow

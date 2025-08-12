@@ -27,8 +27,8 @@ contributing:
 * Avoid sharing opinions about topics without supporting facts
 * Stick to third-person language and avoid using first-person
 * Avoid jargon, acronyms, or abbreviations unless they are defined
-* Keep sentences and paragraphs concise—break up long blocks of text
-* Follow a consistent capitalization style for headings, code terms, proper nouns, etc
+* Keep sentences and paragraphs concise; break up long blocks of text
+* Follow a consistent capitalization style for headings, code terms, proper nouns, etc.
 * Format code snippets consistently (indentation, language tags for syntax highlighting).
 
 ### What is out of scope

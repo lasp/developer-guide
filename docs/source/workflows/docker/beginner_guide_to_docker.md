@@ -41,8 +41,7 @@ useful if you will be running multiple images in tandem, attaching volumes or ne
 generally find yourself running the same commands for creating containers and want to optimize that.
 
 **Docker Registry:** A registry or archive store is a place to store and retrieve docker images. This is one way to
-share already-built docker images. LASP has a private repository, in the form of the
-[LASP docker registry](lasp_docker_registry).
+share already-built docker images. LASP has a private repository, in the form of the LASP docker registry.
 
 So, you define a Docker *image* using a *Dockerfile* and/or a *Docker Compose* file. Running this image produces a
 Docker *container*, which runs your code and environment. An image can be pushed up to a *registry*, where anyone with
@@ -143,10 +142,6 @@ has successfully exited with `docker ps -a`. The `CMD` is how most Docker contai
 intervention work. For an example of a system where that's operating, you can read the documentation on the [TIM tests
 in Docker](https://confluence.lasp.colorado.edu/display/DS/Containerize+TIM+Processing+-+Base+Image).
 
-Next steps, beyond going more in depth with the TIM dockerfiles, would be to learn about using the [LASP docker
-registry](lasp_docker_registry). Other topics include [Docker compose](docker_compose_examples), running Docker on
-[M1 chips](running_docker_with_m1), and other pages under the [Docker Guidelines](index).
-
 ## Docker Cheat Sheet
 
 Here is a list of Docker commands that might be useful to have as a shorthand:
@@ -159,7 +154,7 @@ docker build --platform linux/amd64 -f <filename> -t <name>:latest .
 docker run --platform linux/amd64 -it --name <container name> <image name>:latest
 
 # Login to docker registry
-docker login docker-registry.pdmz.lasp.colorado.edu
+docker login <registry_hostname>
 
 # View docker images
 docker images

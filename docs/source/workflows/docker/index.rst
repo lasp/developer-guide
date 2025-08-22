@@ -9,7 +9,5 @@ Docker
     docker_compose_examples
     export_display_with_docker
     jenkins_job_builder
-    lasp_docker_registry
-    lasp_image_registry
     multi_stage_builds
     running_docker_with_m1

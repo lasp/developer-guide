@@ -81,6 +81,22 @@ you’re distributing/producing.
 3. Fill out the copyright, noting that it is NOT LASP, but *Regents of CU. Copyright (c) YYYY, Regents of the University
    of Colorado*
 
+
+### Data
+
+1. Public data from NASA missions default to the **CC0 1.0** license, unless otherwise marked.
+2. NASA guidance specifies that all data from NASA sponsored missions are to be reusable with a clear, open, and 
+   accessible data license. It does not enforce a specific license, however. 
+   * **CC0 1.0** is the license most widely used for public data within LASP. 
+   * **CC-BY 4.0** is also used for public data in some missions (for example, TSIS-1); 
+     this keeps the data open but asks the user to attribute the data source.
+
+For more information on licensing Earth data, please reference the 
+[EarthData Data Use and Citation Guide](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance) 
+
+For Heliophysics data, please reference the 
+[Heliophysics Data Management Handbook](https://science.nasa.gov/wp-content/uploads/2024/05/hpd-data-management-handbook-final1.pdf).
+
 ## Useful Links
 
 * [Public license selector](https://ufal.github.io/public-license-selector/)

@@ -10,7 +10,7 @@ to use any part of the code legally. This guide provides options for choosing th
 
 ## Options for this guideline
 
-### Software
+### Software Licenses
 
 To avoid copyright concerns, it is recommended that:
 
@@ -45,7 +45,7 @@ Some examples from groups at LASP:
 *NOTE: There is a NASA Open Source License: <https://opensource.gsfc.nasa.gov/nosa.php>; However, it DOES NOT satisfy
 the Free Software Foundation’s definition of open source.*
 
-### Data
+### Data Licenses
 
 A creative commons license can be used to restrict who can use data and how they use it.
 
@@ -72,7 +72,7 @@ you’re distributing/producing.
 ## How to apply this guideline
 
 <!-- markdownlint-disable-next-line MD024 -->
-### Software
+### Software Licensing Guidelines
 
 1. CU Venture Partners (CU lawyers) recommend using BSD-3 license.
 2. Make sure that you put the license file in the root directory and call it `LICENSE` or `LICENSE.md` so that the code
@@ -80,6 +80,21 @@ you’re distributing/producing.
    contributors know.
 3. Fill out the copyright, noting that it is NOT LASP, but *Regents of CU. Copyright (c) YYYY, Regents of the University
    of Colorado*
+
+### Data Licensing Guidelines
+
+1. Public data from NASA missions default to the **CC0 1.0** license, unless otherwise marked.
+2. NASA guidance specifies that all data from NASA sponsored missions are to be reusable with a clear, open, and
+   accessible data license. It does not enforce a specific license, however.
+  * **CC0 1.0** is the license most widely used for public data within LASP.
+  * **CC-BY 4.0** is also used for public data in some missions (for example, TSIS-1);
+    this keeps the data open but asks the user to attribute the data source.
+
+For more information on licensing Earth data, please reference the
+[EarthData Data Use and Citation Guide](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)
+
+For Heliophysics data, please reference the
+[Heliophysics Data Management Handbook](https://science.nasa.gov/wp-content/uploads/2024/05/hpd-data-management-handbook-final1.pdf).
 
 ## Useful Links
 

@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "developer-guide"
-version = "0.1.0"
+version = "1.0.0"
 description = "Guidelines for software developers at LASP"
 authors = [
     {name = "Matthew Bourque", email = "Matthew.Bourque@lasp.colorado.edu>"},

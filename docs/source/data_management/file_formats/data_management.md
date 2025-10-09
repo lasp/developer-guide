@@ -1,12 +1,12 @@
 # Managing Data: Storage, Format, Access
 
-This page covers storage options, data format choices, and access protocols for datasets.  Under Machine Readability,
-it provides coding examples that improve machine readability.
+This guide covers storage options, data format choices, and access protocols for datasets.
 
-## Purpose for this guideline
+## Purpose
 
-An explanation of how this guideline supports DS workflows, meets internal and external policies,
-and aids in collaboration and our overall success
+The purpose of this guideline is to ensure that datasets are managed in ways that meet open science principles and
+institutional requirements. It supports Data Systems workflows by improving data accessibility, promoting reproducibility,
+and enhancing usability and compliance with funder and publisher requirements.
 
 ## Storage
 

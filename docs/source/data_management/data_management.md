@@ -1,12 +1,9 @@
 # Managing Data: Storage, Format, Access
 
-This guide covers storage options, data format choices, and access protocols for datasets.
-
-## Purpose
-
-The purpose of this guideline is to ensure that datasets are managed in ways that meet open science principles and
-institutional requirements. It supports Data Systems workflows by improving data accessibility, promoting reproducibility,
-and enhancing usability and compliance with funder and publisher requirements.
+This guide covers storage options, data format choices, and access protocols for datasets to ensure that datasets are
+managed in ways that meet open science principles and institutional requirements. It supports Data Systems workflows by
+improving data accessibility, promoting reproducibility, and enhancing usability and compliance with funder and
+publisher requirements.
 
 ## Storage
 
@@ -74,6 +71,7 @@ To improve machine readability:
 
 - [Data Stewardship at LASP](data_stewardship.md)
 - [FAIR Principles](fair_principles.md)
+- [netCDF](file_formats/netcdf.md)
 - [LISRD](https://lasp.colorado.edu/lisird/)
 - [Zenodo](https://zenodo.org/)
 - [CU Scholar](https://scholar.colorado.edu/about)
@@ -90,15 +88,16 @@ To improve machine readability:
 
 List of acronyms used in the guideline
 
-- **DOI** = Digital Object Identifier
 - **AWS** = Amazon Web Services
 - **CDF** = Common Data Format
 - **CSV** = Comma-Separated Values
+- **DOI** = Digital Object Identifier
 - **FITS** = Flexible Image Transport System
 - **HDF** = Hierarchical Data Format
 - **IDL** = Interactive Data Language
 - **LEMR** = LASP Environmental Metadata Repository
 - **LISIRD** = LASP Interactive Solar Irradiance Data Center
 - **MOU** = Memorandum of Understanding
+- **NetCDF** = Network Common Data Form
 
 Credit: Content taken from a Confluence guide written by Anne Wilson and Shawn Polson

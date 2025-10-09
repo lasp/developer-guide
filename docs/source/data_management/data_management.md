@@ -35,7 +35,7 @@ External repositories
 - Simple storage in the cloud: AWS Glacier, S3
 - Fedora, Zenodo, Open Science Framework, Dataverse
 
-## Data Format
+## Data Formats
 
 To maximize the potential application of tools to data, data should be provided in common, open, self-describing,
 machine readable formats such as:
@@ -72,6 +72,8 @@ To improve machine readability:
 
 ## Useful Links
 
+- [Data Stewardship at LASP](data_stewardship.md)
+- [FAIR Principles](fair_principles.md)
 - [LISRD](https://lasp.colorado.edu/lisird/)
 - [Zenodo](https://zenodo.org/)
 - [CU Scholar](https://scholar.colorado.edu/about)

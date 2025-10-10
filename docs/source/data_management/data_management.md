@@ -72,7 +72,7 @@ To improve machine readability:
 - [Data Stewardship at LASP](data_stewardship.md)
 - [FAIR Principles](fair_principles.md)
 - [netCDF](file_formats/netcdf.md)
-- [LISRD](https://lasp.colorado.edu/lisird/)
+- [LISIRD](https://lasp.colorado.edu/lisird/)
 - [Zenodo](https://zenodo.org/)
 - [CU Scholar](https://scholar.colorado.edu/about)
 - [CU PetaLibrary](https://www.colorado.edu/rc/resources/petalibrary)

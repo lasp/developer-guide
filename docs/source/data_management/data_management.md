@@ -67,6 +67,29 @@ To improve machine readability:
 - Represent missing values clearly
 - Include metadata in self-describing formats
 
+### Examples of what to do and what not to do with your data
+
+![Machine_readable_example_1](../_static/machine-readable-1.png)
+![Machine_readable_example_2](../_static/machine-readable-2.png)
+![Machine_readable_example_3](../_static/machine-readable-3.png)
+![Machine_readable_example_4](../_static/machine-readable-4.png)
+![Machine_readable_example_5](../_static/machine-readable-5.png)
+![Machine_readable_example_6](../_static/machine-readable-6.png)
+![Machine_readable_example_7](../_static/machine-readable-7.png)
+![Machine_readable_example_8](../_static/machine-readable-8.png)
+![Machine_readable_example_9](../_static/machine-readable-9.png)
+![Machine_readable_example_10](../_static/machine-readable-10.png)
+![Machine_readable_example_11](../_static/machine-readable-11.png)
+![Machine_readable_example_12](../_static/machine-readable-12.png)
+![Machine_readable_example_13](../_static/machine-readable-13.png)
+![Machine_readable_example_14](../_static/machine-readable-14.png)
+![Machine_readable_example_15](../_static/machine-readable-15.png)
+![Machine_readable_example_17](../_static/machine-readable-17.png)
+![Machine_readable_example_18](../_static/machine-readable-18.png)
+![Machine_readable_example_20](../_static/machine-readable-20.png)
+![Machine_readable_example_21](../_static/machine-readable-21.png)
+![Machine_readable_example_22](../_static/machine-readable-22.png)
+
 ## Useful Links
 
 - [Data Stewardship at LASP](data_stewardship.md)

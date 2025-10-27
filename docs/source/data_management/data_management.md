@@ -13,18 +13,18 @@ Storage on local disks or external hard drives is not considered open and access
 Storage choice depends on many factors, including dataset size, access needs, performance needs, need for
 authentication, other data management needs (e.g., the need for a DOI), etc.
 
-LASP resources
+**LASP resources**
 
 - LISIRD, for solar irradiance and related data products
 - LASP options: (e.g. dsapps, lasp-store)
 - LEMR for metadata
 
-CU Boulder resources
+**CU Boulder resources**
 
 - CU Scholar is suitable for small datasets that provides a DOI, a generically-styled landing page, and some storage.
 - CU Boulder PetaLibrary for information about CU Research Computings PetaLibrary storage resources.
 
-External repositories
+**External repositories**
 
 - Dryad: a curated resource that makes research data discoverable, freely reusable, and citable.
 - Figshare: a web-based interface designed for academic research data management and research data dissemination.

@@ -51,6 +51,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
+   how_to_write_docs
    licensing
    programming_languages/index
    data_management/index

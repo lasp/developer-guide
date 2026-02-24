@@ -7,3 +7,5 @@ Open Source
 
    citing_software.md
    lasp_github_org.md
+   lasp_github_org.md
+   pull_requests.md

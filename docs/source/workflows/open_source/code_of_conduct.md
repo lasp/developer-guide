@@ -19,9 +19,6 @@ As members of the community,
 
 This code of conduct applies to all community situations online and offline, including mailing lists, forums, social media, conferences, meetings, associated social events, and one-to-one interactions.
 
-Parts of this code of conduct have been adapted from the Astropy and Numfocus codes of conduct:
-- http://www.astropy.org/code_of_conduct.html
-- https://www.numfocus.org/about/code-of-conduct/
+Parts of this code of conduct have been adapted from the [Astropy](http://www.astropy.org/code_of_conduct.html) and [Numfocus](https://www.numfocus.org/about/code-of-conduct/) codes of conduct.
 
-This code of conduct is based on the SpaceTelescope code of conduct:
-- https://github.com/spacetelescope/style-guides/blob/75d52647344f85527d9b60b6bf38bde46d30e2b2/templates/CODE_OF_CONDUCT.md
+This code of conduct is based on the [SpaceTelescope code of conduct](https://github.com/spacetelescope/style-guides/blob/75d52647344f85527d9b60b6bf38bde46d30e2b2/templates/CODE_OF_CONDUCT.md).

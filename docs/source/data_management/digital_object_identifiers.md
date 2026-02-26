@@ -125,7 +125,7 @@ input form may be integrated into the DOI.
 Note that DOI names are not case-sensitive, while URLs are case-sensitive:
 https://support.datacite.org/docs/datacite-doi-display-guidelines.
 
-## Navigating DOI Options at LASP
+## Navigating Options at LASP
 There are internal and external options available for creating DOIs for various types of products
 including datasets, software, and presentations. If you're not
 sure where to start, reach out to the LASP Data Management team for guidance by submitting

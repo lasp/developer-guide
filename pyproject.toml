@@ -27,9 +27,10 @@ package-mode = false
 
 [tool.poetry.dependencies]
 myst-parser = "^3.0.1"
-python = ">=3.9,<4"
+python = ">=3.10,<4"
 sphinx = "^7.3.7"
 sphinx-rtd-theme = "^2.0.0"
+pre-commit = "^4.5.1"
 
 [project.urls]
 homepage = "https://github.com/lasp/"

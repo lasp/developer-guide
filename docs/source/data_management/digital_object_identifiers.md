@@ -131,7 +131,7 @@ including datasets, software, and presentations. If you're not
 sure where to start, reach out to the LASP Data Management team for guidance by submitting
 a Jira issue with type "DOI" in the [Data Management Jira project](https://jira.lasp.colorado.edu/projects/DATAMAN/).
 
-![DOI_Format](../_static/doi_options.png)
+![Diagram of DOI creation and management options at LASP](../_static/doi_options.png)
 
 
 ## Useful Links
@@ -139,7 +139,6 @@ a Jira issue with type "DOI" in the [Data Management Jira project](https://jira.
 - [DataCite: DOI Basics](https://support.datacite.org/docs/doi-basics)
 - [DataCite: DOI Handbook](https://www.doi.org/the-identifier/resources/handbook/)
 - [DataCite: DOI Display Guidelines](https://support.datacite.org/docs/datacite-doi-display-guidelines)
-- [Creating a DOI via CU Libraries and DataCite](creating_a_doi.md)
 
 ## Acronyms
 

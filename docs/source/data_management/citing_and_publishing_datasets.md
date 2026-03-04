@@ -9,9 +9,9 @@ The process of publishing and citing datasets involves several key steps:
 
 1. **Understand Publisher Requirements** - [DOIs](digital_object_identifiers.md) and [ORCIDs](https://orcid.org/) may be required by publishers to maintain compliance with submission guidelines
 2. **Make Data Open and Accessible** - Store datasets in publicly accessible, machine-readable formats
-2. **Create a DOI and Landing Page** - Register a persistent identifier that resolves to a landing page with comprehensive dataset information.
-3. **Maintain Metadata** - Keep DOI metadata accurate and up to date
-4. **Cite Datasets Properly** - Follow established data citation principles in publications. Reference
+3. **Create a DOI and Landing Page** - Register a persistent identifier that resolves to a landing page with comprehensive dataset information.
+4. **Maintain Metadata** - Keep DOI metadata accurate and up to date
+5. **Cite Datasets Properly** - Follow established data citation principles in publications. Reference
    the [Force 11 Joint Declaration of Data Citation Principles](https://www.force11.org/datacitationprinciples) and
    follow practices described in the [ESIP Dataset Citation Guidelines](https://doi.org/10.6084/m9.figshare.8441816).
 
@@ -98,7 +98,6 @@ to create DOIs and get advice on CU resources available to support publishing da
 - [Field Descriptions for DOI Form](https://support.datacite.org/docs/field-descriptions-for-form)
 - [DataCite Metadata Quality](https://support.datacite.org/docs/metadata-quality)
 - [DataCite Community Responsibility](https://support.datacite.org/docs/community-responsibility)
-- [Data Citation Roadmap (Scholarly Repositories)](https://www.biorxiv.org/content/biorxiv/early/2017/10/09/097196.full.pdf)
 - [Intro to DataCite REST API](https://support.datacite.org/docs/api)
 - [Metadata Requirements](metadata.md)
 - [NASA EOSDIS DOI Guidelines](https://wiki.earthdata.nasa.gov/display/DOIsforEOSDIS)

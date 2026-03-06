@@ -6,7 +6,7 @@
 
 Docker and its underlying container orchestration system fundamentally only runs on Linux. If you are using a Mac on
 Windows machine, your Docker system is running on a VM. On Windows this VM is usually Windows Subsystem for Linux (WSL)
-and on Mac this is usually the Docker Desktop-managed VM or a Colima VM. 
+and on Mac this is usually the Docker Desktop-managed VM or a Colima VM.
 
 The container runtime and Docker system run on this VM host, which forwards the docker socket (`docker.sock`) through to
 your host system to allow you to use Docker commands in your host terminal. All the containers themselves are created on
@@ -25,7 +25,7 @@ Docker is one of many CLI tools that can interact with containerd to build and r
 For example, Docker uses the open source Moby software as a middle layer between the Docker CLI and containerd to
 organize containers. Other tools interact with containerd directly.
 
-## Advanced Configuration 
+## Advanced Configuration
 
 ### Running Containers Inside Containers
 
@@ -64,7 +64,7 @@ Cons:
 
 In this model, containers install a full Docker daemon internally. The container has its own docker daemon and is
 entirely segregated from the host's daemon when building nested containers. Typically DinD containers store their docker
-data in a Docker Volume to improve performance. This volume exists in the Linux Host's Docker system. 
+data in a Docker Volume to improve performance. This volume exists in the Linux Host's Docker system.
 
 Pros:
 

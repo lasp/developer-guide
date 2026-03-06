@@ -157,10 +157,15 @@ docker run --platform linux/amd64 -it --name <container name> <image name>:lates
 docker login <registry_hostname>
 
 # View docker images
-docker images
+docker images # legacy
+docker image ls # modern
 
 # View docker containers
-docker ps -a
+docker ps -a # legacy
+docker container ls -a # modern
+
+# View docker volumes
+docker volume ls
 
 # Remove stopped containers
 docker container prune

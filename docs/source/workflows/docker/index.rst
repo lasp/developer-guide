@@ -5,6 +5,8 @@ Docker
     :maxdepth: 1
 
     beginner_guide_to_docker
+    advanced_guide_to_docker
+    developing_in_devcontainers
     containerizing_idl_with_docker
     docker_compose_examples
     export_display_with_docker

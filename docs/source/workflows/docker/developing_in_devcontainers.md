@@ -17,6 +17,7 @@ Pros:
 - Dead simple. Just configure the devcontainer to bind-mount the directory.
 
 Cons:
+
 - Requires you to first mount the directory into your Linux VM running Docker (see [Advanced Docker
   Configuration](advanced_guide_to_docker.md) for more details on why this is a bad idea).
 - Bind-mounts are slow because file system changes are propagated through layers of OS translation from container, to

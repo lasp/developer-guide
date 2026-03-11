@@ -4,7 +4,7 @@
 
 ### The Linux Host (Usually a VM)
 
-Docker and its underlying container orchestration system fundamentally only runs on Linux. If you are using a Mac on
+Docker and its underlying container orchestration system fundamentally only runs on Linux. If you are using a Mac or
 Windows machine, your Docker system is running on a VM. On Windows this VM is usually Windows Subsystem for Linux (WSL)
 and on Mac this is usually the Docker Desktop-managed VM or a Colima VM.
 
@@ -15,7 +15,7 @@ the VM filesystem.
 ### The Container Runtime
 
 Most container orchestration systems run on `containerd`, a low level container orchestration layer that provides the
-foundation for other tools to managed and work with containers in a standard way. The containerd project was originally
+foundation for other tools to manage and work with containers in a standard way. The containerd project was originally
 started by Docker but has been donated open source.
 
 ### The CLI and Middle Layers
@@ -93,7 +93,7 @@ it _seems_ like your bind-mount commands reflect your host filesystem, they real
 Mac Filesystem -> Linux VM -> Docker Container
 ```
 
-Don't accept this default! Choose exactly what data your Docker containers should be able to access by limiting the what
+Don't accept this default! Choose exactly what data your Docker containers should be able to access by limiting what
 your Linux VM is allowed to mount. Remember that the bind-mount path you give to your containers is really the path to
 the data _inside the Linux VM_.
 

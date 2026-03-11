@@ -4,7 +4,7 @@ A devcontainer is a Docker container that contains your code and development env
 connecting to a devcontainer for development. This allows you to develop against a stable environment that is not
 dependent on the configuration of the rest of your host system.
 
-Devcontainers are extremely flexible and can be configured in many ways via `devcontainer.json`, from running in Github
+Devcontainers are extremely flexible and can be configured in many ways via `devcontainer.json`, from running in GitHub
 Codespaces to bind-mounting your repo directory, to cloning a repo into a dedicated Docker volume.
 
 ## Bind-Mounting Code
@@ -19,7 +19,7 @@ Pros:
 Cons:
 - Requires you to first mount the directory into your Linux VM running Docker (see [Advanced Docker
   Configuration](advanced_guide_to_docker.md) for more details on why this is a bad idea).
-- Bind-mounts are slow because file system changes are propataged through layers of OS translation from container, to
+- Bind-mounts are slow because file system changes are propagated through layers of OS translation from container, to
   VM, to host.
 
 

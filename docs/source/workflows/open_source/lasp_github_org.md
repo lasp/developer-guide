@@ -32,7 +32,6 @@ GitHub repositories within the LASP organization, and support open source projec
 
 * Maxine Hartnett
 * Keira Brooks
-* Matthew Bourque
 * Rita Borelli
 
 If you are interested in joining GLOSS, please reach out to the `#open-source` Slack channel or email a current

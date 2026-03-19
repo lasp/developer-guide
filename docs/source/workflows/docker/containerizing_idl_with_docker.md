@@ -24,7 +24,10 @@ This document provides a preliminary implementation of IDL in a Docker container
 ## Dockerfile
 
 The Dockerfile directives consist of the IDL installation, requisite libraries, licensing configuration and the default
-runtime command:
+runtime command.
+
+> **Note:** You will need to specify the real license server address in the Dockerfile below. LASP employees should
+> contact IT for more information.
 
 ```Dockerfile
 # Build from parent image https://hub.docker.com/_/ubuntu
@@ -57,8 +60,8 @@ RUN apt-get update && apt-get install -y \
 RUN echo 'alias idl="/usr/local/harris/idl87/bin/idl"' >> ~/.bashrc \
    && echo 'alias idl="/usr/local/harris/idl87/bin/idl"' >> ~/.bash_profile
 
-# Necessary for network-based licensing
-RUN echo 'http://idl-lic.lasp.colorado.edu:7070/fne/bin/capability' >> /usr/local/harris/license/o_licenseserverurl.txt
+# Copy network-based license to local idl directory
+RUN echo '<placeholder_license_server_url>' >> /usr/local/harris/license/o_licenseserverurl.txt
 
 CMD ["/usr/local/harris/idl87/bin/idl"]
 ```

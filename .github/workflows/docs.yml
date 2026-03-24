@@ -1,0 +1,39 @@
+name: Docs Build
+
+# Builds the Sphinx docs on every PR to verify nothing is broken before merge.
+# This is separate from ReadTheDocs, which publishes the live site on push to main.
+# -W turns warnings into errors (catches broken references, bad toctree entries, etc.)
+# -n enables nitpicky mode (flags missing references)
+# --keep-going collects all errors instead of stopping at the first one
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  sphinx:
+    name: Build Sphinx docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Poetry
+        run: python -m pip install poetry
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Build docs (warnings = errors)
+        # -W  treat warnings as errors
+        # -n  nitpicky mode — flag all missing references
+        # --keep-going  collect every error before failing (don't stop at first)
+        run: |
+          poetry run sphinx-build -W --keep-going -n \
+            docs/source docs/source/build
+
+

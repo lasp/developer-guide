@@ -1,9 +1,9 @@
-## Pull Request and Review Standards
+# Pull Request and Review Standards
 
 Before any code is merged into the code base, it will need to be put up for pull request (PR) and reviewed. The pull request should be created following
 the checklist for pull requests.
 
-### Checklist for Pull Requests
+## Checklist for Pull Requests
 
 * Read through your own diff and look for weirdness. e.g. mistakes or accidental changes
 * Update the changelog, if one exists.
@@ -26,7 +26,7 @@ Ask the following questions:
 * Does the code include new unit tests?
 * Are any new dependencies correctly added to the ``pyproject.toml`` file?
 
-### Before opening a pull request
+## Before opening a pull request
 
 Before you create the pull request, you should go through the checklist for pull requests to ensure the proposed changes meet the repository standards.
 
@@ -39,7 +39,7 @@ initial design. If you put up a draft PR, indicate whether or not you are lookin
 
 Finally, if you are addressing an existing issue, make sure that issue is [linked](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) in your PR. If there is not an existing issue, then you should either create an issue or address WHY you are opening the PR specifically.
 
-### During review
+## During review
 
 As a reviewer, please follow these rules of thumb:
 
@@ -61,7 +61,7 @@ As a team:
 1. Don't take comments personally - treat everyone as a fellow team member working to produce excellent code, not as adversaries to defeat before you can merge
 1. Be honest - if you disagree with someones comment, start a discussion on why that is the case
 
-### Before merging
+## Before merging
 
 Before merging, a pull request needs one approving review. While the review is open, anyone can make comments or request changes on the PR.
 
@@ -74,4 +74,3 @@ Although only one approval is required, you must follow these rules:
 1. You should go through the pull request checklist.
 1. You should ensure ALL checks on the PR pass (tests are passing)
 1. If you have a lot of commits, clean up the commits by running a [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) and combining commits.
-

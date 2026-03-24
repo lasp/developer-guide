@@ -285,8 +285,8 @@ package and optionally also written to a version.py file so it remains accessibl
 
 The options for Python packaging and distribution that we often see used at LASP are:
 
-- [PyPI](#packaging-for-pypi--pip-install-)
-- [Conda](#packaging-for-conda--conda-install-)
+- [PyPI](#packaging-for-pypi-pip-install)
+- [Conda](#packaging-for-conda-conda-install)
 
 ## Packaging for PyPI (`pip install`)
 

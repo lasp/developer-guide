@@ -92,7 +92,7 @@ rebuild, and you can find a full list of flags [here](https://docs.docker.com/re
 Now that we have built the image, we can see all the Docker images that are built on our system by running the
 `docker images` command:
 
-```plaintext
+```text
 $ docker images
 REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
 docker_tutorial                  latest    71736be7c555   5 minutes ago   91.9MB

@@ -21,6 +21,9 @@ extensions = [
     'sphinx.ext.viewcode',
 ]
 
+# Generate heading anchors for H1–H3 so that #slug links in .md files resolve
+myst_heading_anchors = 3
+
 templates_path = ['_templates']
 exclude_patterns = []
 source_suffix = {

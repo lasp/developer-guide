@@ -10,6 +10,5 @@ Docker
     containerizing_idl_with_docker
     docker_compose_examples
     export_display_with_docker
-    jenkins_job_builder
     multi_stage_builds
     running_docker_with_m1

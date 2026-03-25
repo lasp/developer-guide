@@ -89,11 +89,10 @@ you've ever wondered how a Docker container isolated to a Linux VM can bind-moun
 makes that work seamlessly. In fact, the VM defaults to mounting your home directory to exactly the same path, so while
 it _seems_ like your bind-mount commands reflect your host filesystem, they really reflect the path inside the VM.
 
-```
+```text
 Mac Filesystem -> Linux VM -> Docker Container
 ```
 
 Don't accept this default! Choose exactly what data your Docker containers should be able to access by limiting what
 your Linux VM is allowed to mount. Remember that the bind-mount path you give to your containers is really the path to
 the data _inside the Linux VM_.
-

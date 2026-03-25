@@ -210,7 +210,7 @@ Usage::
 Notes:
 
 - Use action words ("Return") rather than descriptions ("Returns").
-- Document __init__ methods in the docstring for the class.
+- Document `__init__` methods in the docstring for the class.
 
 ```python
 class Person(object):

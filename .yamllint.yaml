@@ -21,5 +21,5 @@ rules:
     min-spaces-inside: 0
     max-spaces-inside: 1
 
-  # Require documents to start with ---  only in non-workflow YAML
+  # Do not require documents to start with --- (document-start rule disabled)
   document-start: disable

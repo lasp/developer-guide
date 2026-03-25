@@ -1,6 +1,16 @@
 ci:
-  autofix_prs: false
+  # pre-commit.ci (https://pre-commit.ci) — free for open-source repos.
+  # When enabled, it runs all hooks on every PR and commits any auto-fixes
+  # back to the PR branch automatically (no local setup required for contributors).
+  # Hooks that can auto-fix: end-of-file-fixer, trailing-whitespace,
+  #   mixed-line-ending, markdownlint (--fix), codespell (--write-changes).
+  # Hooks that only detect (still require a human fix): check-yaml,
+  #   check-merge-conflict, rstcheck, yamllint.
+  autofix_prs: true
   autoupdate_schedule: 'quarterly'
+  # rstcheck needs a full Sphinx/Poetry environment that pre-commit.ci
+  # doesn't have — skip it there and let docs.yml in GitHub Actions cover it.
+  skip: [rstcheck]
 
 repos:
   # ---------------------------------------------------------------------------
@@ -33,7 +43,11 @@ repos:
     rev: v0.43.0
     hooks:
       - id: markdownlint
-        args: [--config, .markdownlint.yaml]
+        # --fix auto-corrects issues that have a safe mechanical fix
+        # (blank lines around headings, trailing punctuation, etc.).
+        # Issues that require human judgement (line length, missing code
+        # fence language) are still reported as errors.
+        args: [--fix, --config, .markdownlint.yaml]
 
   # ---------------------------------------------------------------------------
   # reStructuredText validation (toctree, directives, broken references)
@@ -64,6 +78,9 @@ repos:
       - id: codespell
         files: ^.*\.(md|rst|yml)$
         args:
+          # --write-changes auto-corrects unambiguous spelling mistakes.
+          # Ambiguous corrections (multiple candidates) are still reported.
+          - --write-changes
           # nd/ND = Creative Commons "No Derivatives"
           # SORCE = Solar Radiation and Climate Experiment (NASA mission)
           # sav = IDL save file extension

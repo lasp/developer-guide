@@ -37,4 +37,7 @@ homepage = "https://github.com/lasp/"
 repository = "https://github.com/lasp/developer-guide"
 
 [tool.codespell]
-ignore-words-list = "nd, SORCE, sav"
+# nd/ND = "No Derivatives" (Creative Commons license term)
+# SORCE = Solar Radiation and Climate Experiment (NASA mission)
+# sav = IDL save file extension (.sav)
+ignore-words-list = "nd,ND,SORCE,sav"

@@ -1,0 +1,6 @@
+# CODEOWNERS — automatic review suggestions
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# GitHub automatically suggests dev-guide-admins as reviewers for all PRs.
+
+# Request review from dev-guide-admins team for all files
+* @lasp/dev-guide-admins

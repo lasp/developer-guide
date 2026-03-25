@@ -35,5 +35,3 @@ jobs:
         run: |
           poetry run sphinx-build -W --keep-going -n \
             docs/source docs/source/build
-
-

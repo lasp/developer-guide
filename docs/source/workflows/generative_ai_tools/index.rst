@@ -5,4 +5,3 @@ Generative AI Tools
     :maxdepth: 1
 
     generative_ai_tools_at_lasp
-    activating_github_copilot

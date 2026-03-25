@@ -9,6 +9,12 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
 
+# Opt into Node.js 24 for all actions in this workflow.
+# Remove once actions/checkout and actions/setup-python release
+# versions that natively target Node.js 24.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   sphinx:
     name: Build Sphinx docs

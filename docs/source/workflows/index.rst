@@ -8,4 +8,3 @@ Workflows
     jenkins_job_builder/index
     open_source/index
     generative_ai_tools/index
-

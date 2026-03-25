@@ -70,13 +70,13 @@ repos:
         args: [--config-file, .yamllint.yaml]
 
   # ---------------------------------------------------------------------------
-  # Spell checking (.md, .rst, .yml)
+  # Spell checking (.md, .rst, .yml, .yaml)
   # ---------------------------------------------------------------------------
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
       - id: codespell
-        files: ^.*\.(md|rst|yml)$
+        files: ^.*\.(md|rst|ya?ml)$
         args:
           # --write-changes auto-corrects unambiguous spelling mistakes.
           # Ambiguous corrections (multiple candidates) are still reported.

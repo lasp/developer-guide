@@ -46,15 +46,15 @@ jobs:
         shell: bash
         run: |
           {
-            echo "## 📚 Sphinx Docs Build"
+            echo "## Sphinx Docs Build"
             echo ""
             if [ "${{ steps.build.outcome }}" = "success" ]; then
-              echo "### ✅ Build passed — no warnings"
+              echo "### Build passed — no warnings"
             else
-              echo "### ❌ Build failed — see warnings below"
+              echo "### Build failed — see warnings below"
             fi
             echo ""
-            echo "> 🔗 **Live preview:** see the **ReadTheDocs** status check below for a"
+            echo "> **Live preview:** see the **ReadTheDocs** status check below for a"
             echo "> clickable URL to browse the built docs directly."
             echo ""
             echo "<details><summary>Full Sphinx output</summary>"

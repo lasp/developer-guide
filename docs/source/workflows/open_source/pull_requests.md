@@ -62,7 +62,7 @@ As a reviewer, please follow these rules of thumb:
    addressed.
 1. If you make a "request changes" comment, you must create a follow up review where you change that
    to an approving review (or make another "request changes" review). Please do this in a timely
-   matter so you do not block the PR for longer than necessary.
+   manner so you do not block the PR for longer than necessary.
 
 As an author:
 
@@ -75,7 +75,7 @@ As a team:
 1. All parties need to be respectful during code reviews and follow the LASP Code of Conduct
 1. Don't take comments personally - treat everyone as a fellow team member working to produce
    excellent code, not as adversaries to defeat before you can merge
-1. Be honest - if you disagree with someones comment, start a discussion on why that is the case
+1. Be honest - if you disagree with someone's comment, start a discussion on why that is the case
 
 ## Before merging
 

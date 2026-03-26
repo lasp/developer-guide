@@ -37,7 +37,7 @@ As members of the community,
 
 - We pledge to help the entire community follow the code of conduct, and to not remain silent when
   we see violations of the code of conduct. We will take action when members of our community
-  violate this code such as such as contacting LASP organization admins or talking privately with
+  violate this code such as contacting LASP organization admins or talking privately with
   the person.
 
 This code of conduct applies to all community situations online and offline, including mailing

@@ -23,7 +23,6 @@ Cons:
 - Bind-mounts are slow because file system changes are propagated through layers of OS translation from container, to
   VM, to host.
 
-
 ## Volume-Mounting Code
 
 Alternatively, you can store your repo code (or really anything you want to work on) inside a Docker volume that lives
@@ -42,7 +41,6 @@ Cons:
 - Ephemeral. If you delete your docker volume, your repo is gone. This may not be a problem if you push everything to a
   git remote but any .gitignored files will be gone.
 - Less flexible. You don't get free access to your host filesystem. You only get your repo.
-
 
 ## SSH and GPG Keys
 

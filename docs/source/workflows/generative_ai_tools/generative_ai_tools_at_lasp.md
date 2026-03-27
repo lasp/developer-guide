@@ -52,7 +52,7 @@ or assistance from their supervisors, contract officials, compliance officers, a
 risks and ensure adherence to all relevant guidelines, regulations, laws, and institutional policies.
 While LASP does not have an official organizational element defined to administer and support the use of Generative AI
 tools, questions can be posed to the #chatgpt Slack channel for general guidance. Feedback or questions can be provided
-to your [ITGC](/pages/viewpage.action?pageId=139193455) representatives.
+to your ITGC representatives.
 
 ## Terminology
 

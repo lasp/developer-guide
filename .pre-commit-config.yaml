@@ -1,21 +1,86 @@
 ci:
-  autofix_prs: false
+  # pre-commit.ci (https://pre-commit.ci) — free for open-source repos.
+  # When enabled, it runs all hooks on every PR and commits any auto-fixes
+  # back to the PR branch automatically (no local setup required for contributors).
+  # Hooks that can auto-fix: end-of-file-fixer, trailing-whitespace,
+  #   mixed-line-ending, markdownlint (--fix), codespell (--write-changes).
+  # Hooks that only detect (still require a human fix): check-yaml,
+  #   check-merge-conflict, rstcheck, yamllint.
+  autofix_prs: true
   autoupdate_schedule: 'quarterly'
+  # rstcheck needs a full Sphinx/Poetry environment that pre-commit.ci
+  # doesn't have — skip it there and let docs.yml in GitHub Actions cover it.
+  skip: [rstcheck]
+
 repos:
+  # ---------------------------------------------------------------------------
+  # General file hygiene
+  # ---------------------------------------------------------------------------
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-    - id: check-added-large-files
-      args: ['--maxkb=1000']
-    - id: detect-aws-credentials
-      args: [--allow-missing-credentials]
-    - id: detect-private-key
-    - id: mixed-line-ending
-    - id: trailing-whitespace
-    - id: no-commit-to-branch
-      args: [--branch, main]
+      - id: check-added-large-files   # block files > 1 MB
+        args: ['--maxkb=1000']
+      - id: check-case-conflict       # catch Mac/Windows case insensitivity bugs
+      - id: check-merge-conflict      # catch leftover <<<< ==== >>>> markers
+      - id: check-yaml                # validate all YAML files (workflows, config)
+      - id: detect-aws-credentials
+        args: [--allow-missing-credentials]
+      - id: detect-private-key
+      - id: end-of-file-fixer         # ensure every file ends with a newline
+      - id: mixed-line-ending
+      - id: no-commit-to-branch
+        args: [--branch, main]
+      - id: trailing-whitespace
+        # --markdown-linebreak-ext preserves intentional two-space line breaks in .md
+        args: [--markdown-linebreak-ext=md]
+
+  # ---------------------------------------------------------------------------
+  # Markdown linting
+  # Config: .markdownlint.yaml  (mirrors the existing .mdl_style.rb exclusions)
+  # markdownlint-cli2 is the official CLI maintained by the markdownlint author (DavidAnson).
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.19.1
+    hooks:
+      - id: markdownlint-cli2
+        # --fix auto-corrects issues with a safe mechanical fix.
+        # Issues requiring human judgement are still reported as errors.
+        args: [--fix, --config, .markdownlint.yaml]
+
+  # ---------------------------------------------------------------------------
+  # reStructuredText validation (toctree, directives, broken references)
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: v6.2.4
+    hooks:
+      - id: rstcheck
+        additional_dependencies: ['rstcheck-core', 'sphinx']
+        args: [--report-level=warning]
+
+  # ---------------------------------------------------------------------------
+  # YAML linting — catches style issues in workflow files and config
+  # Config: .yamllint.yaml
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [--config-file, .yamllint.yaml]
+
+  # ---------------------------------------------------------------------------
+  # Spell checking (.md, .rst, .yml, .yaml)
+  # ---------------------------------------------------------------------------
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
       - id: codespell
-        files: ^.*\.(md|rst|yml)$
+        files: ^.*\.(md|rst|ya?ml)$
+        args:
+          # --write-changes auto-corrects unambiguous spelling mistakes.
+          # Ambiguous corrections (multiple candidates) are still reported.
+          - --write-changes
+          # nd/ND = Creative Commons "No Derivatives"
+          # SORCE = Solar Radiation and Climate Experiment (NASA mission)
+          # sav = IDL save file extension
+          - --ignore-words-list=nd,ND,SORCE,sav

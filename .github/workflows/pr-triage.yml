@@ -1,0 +1,56 @@
+name: PR Triage
+
+# Automatically request review from dev-guide-admins when a PR is ready for review.
+# Covers two cases:
+#   - PR opened directly as ready for review (opened, reopened)
+#   - Draft PR converted to ready for review (ready_for_review)
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  triage:
+    name: Request review from triage team
+    # Skip draft PRs — only run when the PR is actually ready for review
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+
+    steps:
+      # Request review from the dev-guide-admins team.
+      # Also posts a comment mentioning the team as a reliable fallback notification,
+      # since requestReviewers can silently fail for teams in some org configurations.
+      - name: Request review and notify dev-guide-admins
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request.number;
+            const { owner, repo } = context.repo;
+
+            // Attempt to assign the team as a formal reviewer
+            try {
+              await github.rest.pulls.requestReviewers({
+                owner,
+                repo,
+                pull_number: pr,
+                team_reviewers: ['dev-guide-admins'],
+              });
+              console.log('Successfully requested review from dev-guide-admins');
+            } catch (err) {
+              // Log the error but don't fail — the comment below still notifies the team
+              console.error('requestReviewers failed:', err.message);
+            }
+
+            // Post a comment mentioning the team so they are always notified
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pr,
+              body: '@lasp/dev-guide-admins — this PR is ready for review.',
+            });

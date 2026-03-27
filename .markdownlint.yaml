@@ -1,0 +1,62 @@
+# Markdownlint configuration for markdownlint-cli2 (Node.js)
+# Rule reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+#
+# This mirrors the exclusions in .mdl_style.rb (used by the Ruby mdl gem)
+# so both tools agree. The .mdlrc / .mdl_style.rb files can be retired once
+# the team is fully on markdownlint-cli.
+
+default: true
+
+# -- Line length --------------------------------------------------------------
+# 120 chars max; code blocks and tables are exempt (same as .mdl_style.rb)
+MD013:
+  line_length: 120
+  code_blocks: false
+  tables: false
+  headings: false
+
+# -- Disabled rules (match .mdl_style.rb exclusions) -------------------------
+MD014: false   # Dollar signs before commands without showing output — allowed
+MD029: false   # Ordered list item prefix — allow repeating "1." style
+MD033: false   # Inline HTML — allowed
+MD034: false   # Bare URLs — allowed
+MD036: false   # Emphasis used instead of a heading — allowed
+
+# -- Additional sensible rules ------------------------------------------------
+# Enforce consistent heading style (ATX = # style, not underline style)
+MD003:
+  style: atx
+
+# Enforce consistent unordered list marker (* vs - vs +)
+MD004:
+  style: consistent
+
+# No multiple blank lines
+MD012:
+  maximum: 1
+
+# No hard tabs
+MD010:
+  spaces_per_tab: 4
+
+# Fenced code blocks should have a language specified
+MD040: true
+
+# No trailing punctuation in headings
+MD026:
+  punctuation: ".,;:!"
+
+# -- Disabled rules (repo convention) -----------------------------------------
+# The guideline template consistently uses 2-space sub-bullets under numbered
+# lists (e.g., 1. **Step** \n  - detail). Enforcing MD007 would require
+# rewriting every How-to-Apply section across the whole site.
+MD007: false
+
+# Tight lists (no blank lines between items) are idiomatic in this repo's
+# guideline pages. MD032 would require blank lines around every list block.
+MD032: false
+
+# Table column alignment style is overly strict for contributors and produces
+# false positives on wide-cell tables — disable until a consistent table style
+# is established across the whole site.
+MD060: false

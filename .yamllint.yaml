@@ -1,0 +1,25 @@
+# yamllint configuration
+# Docs: https://yamllint.readthedocs.io/en/stable/configuration.html
+---
+extends: default
+
+rules:
+  # Match the project's 120-char line limit; URLs in comments are exempt
+  line-length:
+    max: 120
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
+
+  # GitHub Actions uses `on:` as a top-level key; yamllint flags it as a
+  # truthy value by default, so we explicitly allow it
+  truthy:
+    allowed-values: ['true', 'false']
+    check-keys: false   # disables the 'on:' / 'yes:' key warning
+
+  # Allow both block and flow sequences
+  braces:
+    min-spaces-inside: 0
+    max-spaces-inside: 1
+
+  # Do not require documents to start with --- (document-start rule disabled)
+  document-start: disable

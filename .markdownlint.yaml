@@ -1,4 +1,4 @@
-# Markdownlint configuration for markdownlint-cli (Node.js)
+# Markdownlint configuration for markdownlint-cli2 (Node.js)
 # Rule reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
 #
 # This mirrors the exclusions in .mdl_style.rb (used by the Ruby mdl gem)
@@ -55,3 +55,8 @@ MD007: false
 # Tight lists (no blank lines between items) are idiomatic in this repo's
 # guideline pages. MD032 would require blank lines around every list block.
 MD032: false
+
+# Table column alignment style is overly strict for contributors and produces
+# false positives on wide-cell tables — disable until a consistent table style
+# is established across the whole site.
+MD060: false

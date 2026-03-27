@@ -38,15 +38,14 @@ repos:
   # ---------------------------------------------------------------------------
   # Markdown linting
   # Config: .markdownlint.yaml  (mirrors the existing .mdl_style.rb exclusions)
+  # markdownlint-cli2 is the official CLI maintained by the markdownlint author (DavidAnson).
   # ---------------------------------------------------------------------------
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.43.0
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.19.1
     hooks:
-      - id: markdownlint
-        # --fix auto-corrects issues that have a safe mechanical fix
-        # (blank lines around headings, trailing punctuation, etc.).
-        # Issues that require human judgement (line length, missing code
-        # fence language) are still reported as errors.
+      - id: markdownlint-cli2
+        # --fix auto-corrects issues with a safe mechanical fix.
+        # Issues requiring human judgement are still reported as errors.
         args: [--fix, --config, .markdownlint.yaml]
 
   # ---------------------------------------------------------------------------

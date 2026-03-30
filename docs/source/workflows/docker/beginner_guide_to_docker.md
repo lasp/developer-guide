@@ -87,12 +87,12 @@ The flag `–platform linux/amd64` is optional unless you are [running an M1 chi
 flag indicates the name of the Dockerfile -- in this case, it is also optional, since `Dockerfile` is the default value.
 The `-t` flag is a way to track the docker images and containers on our system by adding a name and a tag. `latest` is
 the tag used to indicate the latest version of a Docker image. Additional useful flags include `--no-cache` for a clean
-rebuild, and you can find a full list of flags [here](https://docs.docker.com/reference/cli/docker/buildx/build/).
+rebuild, and you can find a full list of flags in the [Docker build reference](https://docs.docker.com/reference/cli/docker/buildx/build/).
 
 Now that we have built the image, we can see all the Docker images that are built on our system by running the
 `docker images` command:
 
-```plaintext
+```text
 $ docker images
 REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
 docker_tutorial                  latest    71736be7c555   5 minutes ago   91.9MB

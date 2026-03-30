@@ -5,18 +5,21 @@ openly accessible, properly identified with DOIs, and cited according to communi
 aligns with publisher and funder policies and promotes scientific reproducibility.
 
 ## Dataset Publishing and Citation Workflow
+
 The process of publishing and citing datasets involves several key steps:
 
-1. **Understand Publisher Requirements** - [DOIs](digital_object_identifiers.md) and [ORCIDs](https://orcid.org/) may be required by publishers to maintain compliance with submission guidelines
+1. **Understand Publisher Requirements** - [DOIs](digital_object_identifiers.md) and
+   [ORCIDs](https://orcid.org/) may be required by publishers to maintain compliance with
+   submission guidelines
 2. **Make Data Open and Accessible** - Store datasets in publicly accessible, machine-readable formats
-3. **Create a DOI and Landing Page** - Register a persistent identifier that resolves to a landing page with comprehensive dataset information.
+3. **Create a DOI and Landing Page** - Register a persistent identifier that resolves to a
+   landing page with comprehensive dataset information.
 4. **Maintain Metadata** - Keep DOI metadata accurate and up to date
 5. **Cite Datasets Properly** - Follow established data citation principles in publications. Reference
    the [Force 11 Joint Declaration of Data Citation Principles](https://www.force11.org/datacitationprinciples) and
    follow practices described in the [ESIP Dataset Citation Guidelines](https://doi.org/10.6084/m9.figshare.8441816).
 
-
-## Publishing Options:
+## Publishing Options
 
 1. **LASP Data Management Group**
    This group can assist with minting a DOI for LASP hosted datasets and provide guidance on navigating CU resources
@@ -41,6 +44,7 @@ The process of publishing and citing datasets involves several key steps:
    process for LASP-affiliated data products.
 
 ## Quick Start Guide
+
 As of 2018, CU Libraries is a member of DataCite.  Through this membership, LASP can mint and
 register a limited number of DOIs for datasets housed in our repositories, enabling data to be persistently identified,
 accessed, and cited. For LASP-affiliated datasets, researchers can work with the LASP Data Management team
@@ -81,7 +85,6 @@ to create DOIs and get advice on CU resources available to support publishing da
     - [Data Citation Roadmap for Scholarly Data Repositories](https://www.biorxiv.org/content/biorxiv/early/2017/10/09/097196.full.pdf)
 
 ![DataCite_Repository_Guidelines](../_static/repository_obligations_table.png)
-
 
 ## Useful Links
 

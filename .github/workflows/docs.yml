@@ -1,0 +1,69 @@
+name: Docs Build
+
+# Fast CI error-gate: catches broken toctrees, bad references, and Sphinx
+# warnings before merge. Runs in ~2 min.
+#
+# The live browsable preview is handled by ReadTheDocs, which posts its own
+# status check ("docs/readthedocs.com") with a direct URL when a PR build
+# completes. Enable it once in the RTD dashboard:
+#   Admin → Advanced Settings → "Build pull requests for this project" ✓
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  sphinx:
+    name: Build Sphinx docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Poetry
+        run: python -m pip install poetry
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Build docs (warnings = errors)
+        id: build
+        shell: bash
+        run: |
+          set -o pipefail
+          poetry run sphinx-build -W --keep-going -n \
+            docs/source docs/source/build 2>&1 | tee /tmp/sphinx-output.txt
+
+      - name: Write job summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Sphinx Docs Build"
+            echo ""
+            if [ "${{ steps.build.outcome }}" = "success" ]; then
+              echo "### Build passed — no warnings"
+            else
+              echo "### Build failed — see warnings below"
+            fi
+            echo ""
+            echo "> **Live preview:** see the **ReadTheDocs** status check below for a"
+            echo "> clickable URL to browse the built docs directly."
+            echo ""
+            if [ -f /tmp/sphinx-output.txt ]; then
+              echo "<details><summary>Full Sphinx output</summary>"
+              echo ""
+              echo '```'
+              cat /tmp/sphinx-output.txt
+              echo '```'
+              echo ""
+              echo "</details>"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

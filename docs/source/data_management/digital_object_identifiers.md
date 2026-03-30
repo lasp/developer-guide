@@ -92,10 +92,10 @@ content, making it citable and discoverable.
 See [citing software](../workflows/open_source/citing_software.md)
 for more on using Zenodo to cite software.
 
-### [ORCiDs](https://orcid.org/)
+### [ORCID iDs](https://orcid.org/)
 
-ORCiDs are like DOIs but provide
-persistent digital object identifiers for people.
+ORCID iDs are like DOIs but provide
+persistent digital identifiers for researchers.
 
 ## DOI Format
 

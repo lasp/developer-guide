@@ -52,8 +52,8 @@ Some resources that describe the path by which we arrived where we are:
 
 ### Working definitions
 
-Package: A directory containing python modules and an __init__.py file.
-Subpackage: A package directory containing an __init__.py file, which is itself contained inside an enclosing package.
+Package: A directory containing python modules and an `__init__.py` file.
+Subpackage: A package directory containing an `__init__.py` file, which is itself contained inside an enclosing package.
 Module: A python file that can be imported, possibly as part of a package or subpackage.
 
 ### Package Structure
@@ -285,8 +285,8 @@ package and optionally also written to a version.py file so it remains accessibl
 
 The options for Python packaging and distribution that we often see used at LASP are:
 
-- [PyPI](#packaging-for-pypi--pip-install-)
-- [Conda](#packaging-for-conda--conda-install-)
+- [PyPI](#packaging-for-pypi-pip-install)
+- [Conda](#packaging-for-conda-conda-install)
 
 ## Packaging for PyPI (`pip install`)
 

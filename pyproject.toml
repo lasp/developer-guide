@@ -37,4 +37,5 @@ homepage = "https://github.com/lasp/"
 repository = "https://github.com/lasp/developer-guide"
 
 [tool.codespell]
-ignore-words-list = "nd, SORCE, sav"
+# NOTE: These need to be added to .pre-commit-config.yaml to be ignored.
+ignore-words-list = "nd,ND,SORCE,sav"

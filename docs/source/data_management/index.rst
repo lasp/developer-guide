@@ -5,6 +5,7 @@ Data Management
 .. toctree::
    :maxdepth: 1
 
+   data_management
    file_formats/index
    metadata.md
    fair_principles.md

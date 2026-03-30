@@ -117,8 +117,9 @@ version: "3.9"
         ENV_VAR: "test var"
 ```
 
-If you wanted to tag this image, you can find more info on doing that
-[here](https://docs.docker.com/reference/compose-file/build/#consistency-with-image).
+If you wanted to tag this image, see the
+[Docker Compose build reference](https://docs.docker.com/reference/compose-file/build/#consistency-with-image)
+for more info.
 
 With this docker compose file, you can build and run the Dockerfile with the following command:
 

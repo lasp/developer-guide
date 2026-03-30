@@ -51,7 +51,8 @@ To enable accessibility, a DOI needs to reside in a registry
 where it can be resolved.   The registry collects and provides
 high level information, assigns DOIs, and links to references.
 
-#### [DataCite](https://datacite.org/)
+### [DataCite](https://datacite.org/)
+
 DataCite is a not-for-profit, global
 initiative to "help the research community locate, identify,
 and cite research data with confidence," through DOI minting
@@ -71,7 +72,8 @@ membership, LASP can mint and register DOIs for datasets
 housed in our repositories, enabling data to be persistently
 identified, accessed, and cited.
 
-#### [Crossref](https://www.crossref.org/)
+### [Crossref](https://www.crossref.org/)
+
 Crossref is another registry that
 is often mentioned in Earth and space science contexts. It's
 a not-for-profit association of ~2000 voting member publishers
@@ -79,7 +81,8 @@ who represent 4300 societies and publishers.  It exists to
 facilitate the links between distributed content hosted at
 other sites, and uses DOIs to do so.
 
-#### [Zenodo](https://zenodo.org/)
+### [Zenodo](https://zenodo.org/)
+
 Zenodo is a free repository developed
 by CERN and operated by OpenAIRE.  It is a general-purpose
 repository that allows researchers to deposit datasets,
@@ -89,9 +92,10 @@ content, making it citable and discoverable.
 See [citing software](../workflows/open_source/citing_software.md)
 for more on using Zenodo to cite software.
 
-#### [ORCiDs](https://orcid.org/)
-ORCiDs are like DOIs but provide
-persistent digital object identifiers for people.
+### [ORCID iDs](https://orcid.org/)
+
+ORCID iDs are like DOIs but provide
+persistent digital identifiers for researchers.
 
 ## DOI Format
 
@@ -126,13 +130,13 @@ Note that DOI names are not case-sensitive, while URLs are case-sensitive:
 https://support.datacite.org/docs/datacite-doi-display-guidelines.
 
 ## Navigating Options at LASP
+
 There are internal and external options available for creating DOIs for various types of products
 including datasets, software, and presentations. If you're not
 sure where to start, reach out to the LASP Data Management team for guidance by submitting
 a Jira issue with type "DOI" in the [Data Management Jira project](https://jira.lasp.colorado.edu/projects/DATAMAN/).
 
 ![Diagram of DOI creation and management options at LASP](../_static/doi_options.png)
-
 
 ## Useful Links
 

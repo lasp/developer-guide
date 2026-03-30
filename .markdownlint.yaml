@@ -8,12 +8,10 @@
 default: true
 
 # -- Line length --------------------------------------------------------------
-# 120 chars max; code blocks and tables are exempt (same as .mdl_style.rb)
-MD013:
-  line_length: 120
-  code_blocks: false
-  tables: false
-  headings: false
+# Disabled: MD013 cannot be auto-fixed by markdownlint --fix (it would require
+# editorial judgment about where to wrap prose). Enforcing it creates friction
+# for contributors and has no effect on the rendered Sphinx/HTML output.
+MD013: false
 
 # -- Disabled rules (match .mdl_style.rb exclusions) -------------------------
 MD014: false   # Dollar signs before commands without showing output — allowed

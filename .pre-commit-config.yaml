@@ -17,7 +17,7 @@ repos:
   # General file hygiene
   # ---------------------------------------------------------------------------
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-added-large-files   # block files > 1 MB
         args: ['--maxkb=1000']
@@ -41,7 +41,7 @@ repos:
   # markdownlint-cli2 is the official CLI maintained by the markdownlint author (DavidAnson).
   # ---------------------------------------------------------------------------
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-    rev: v0.19.1
+    rev: v0.22.0
     hooks:
       - id: markdownlint-cli2
         # --fix auto-corrects issues with a safe mechanical fix.
@@ -52,7 +52,7 @@ repos:
   # reStructuredText validation (toctree, directives, broken references)
   # ---------------------------------------------------------------------------
   - repo: https://github.com/rstcheck/rstcheck
-    rev: v6.2.4
+    rev: v6.2.5
     hooks:
       - id: rstcheck
         additional_dependencies: ['rstcheck-core', 'sphinx']
@@ -63,7 +63,7 @@ repos:
   # Config: .yamllint.yaml
   # ---------------------------------------------------------------------------
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.35.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         args: [--config-file, .yamllint.yaml]
@@ -72,7 +72,7 @@ repos:
   # Spell checking (.md, .rst, .yml, .yaml)
   # ---------------------------------------------------------------------------
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.2
     hooks:
       - id: codespell
         files: ^.*\.(md|rst|ya?ml)$
